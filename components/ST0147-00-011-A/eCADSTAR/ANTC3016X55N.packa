@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "ST0147-00-011-A"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-05-27-15:06:51)
+    (mountForm default
+        (footprintRef "ANTC3016X55N")
+        (spec "System")
+    )
+)

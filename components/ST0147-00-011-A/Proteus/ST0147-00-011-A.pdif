@@ -1,0 +1,100 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "ST0147-00-011-A"
+   (description "RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm")
+   (family "ANA")
+   (package "ANTC3016X55N")
+   (attribute "Datasheet Link" "https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf")
+   (attribute "Geometry.Height" "0.55mm")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "Manufacturer_Name" "Amphenol RF")
+   (attribute "Manufacturer_Part_Number" "ST0147-00-011-A")
+   (gate
+    (symbol "ST0147-00-011-A")
+    (pin "FEED" 1 IP)
+    (pin "NC" 2 NC)
+   )
+  )
+  (symbol "ST0147-00-011-A"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 700 100) (pt 700 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "ANTC3016X55N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -2.4 1.325)
+      (pt 2.4 1.325)
+      (pt 2.4 -1.325)
+      (pt -2.4 -1.325)
+      (pt -2.4 1.325))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.525 0.8)
+      (pt 1.525 0.8)
+      (pt 1.525 -0.8)
+      (pt -1.525 -0.8)
+      (pt -1.525 0.8))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.525 0.4)
+      (pt -1.125 0.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 1.55 1.225)
+      (pt -2.3 1.225)
+      (pt -2.3 -1.225)
+      (pt 1.55 -1.225))))
+   (leg 1 (pt -1.55 0) (padstack 0))
+   (leg 2 (pt 1.55 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.8 1.75 0 0 90))
+   )
+   (model "ST0147-00-011-A.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

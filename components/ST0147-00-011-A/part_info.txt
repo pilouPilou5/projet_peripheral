@@ -1,0 +1,9 @@
+Manufacturer=Amphenol RF
+PartNumber=ST0147-00-011-A
+PartCategory=Antenna
+PackageCategory=Antennas Chip
+PinCount=2
+Version=2.1
+Released=2024-05-27 15:06:51
+Downloaded=2024-12-10 16:37:02
+3D=Y

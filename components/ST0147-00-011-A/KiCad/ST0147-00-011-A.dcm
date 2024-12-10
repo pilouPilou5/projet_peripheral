@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ST0147-00-011-A
+D RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm
+K
+F https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf
+$ENDCMP
+#
+#End Doc Library

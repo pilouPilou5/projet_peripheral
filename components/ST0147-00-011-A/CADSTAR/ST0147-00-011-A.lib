@@ -1,0 +1,16 @@
+.ST0147-00-011-A :1 ;RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm
+ANTC3016X55N
+*STM ANT
+*NGS
+*PLB 1="FEED" 2="NC"
+*MXP 2
+*DFN ST0147-00-011-A
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Manufacturer_Name (Amphenol RF)
+~!Manufacturer_Part_Number (ST0147-00-011-A)
+~!Link Datasheet (https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf)
+~!Height (0.55mm)
+~!3D_Model (ST0147-00-011-A)
+ST0147-00-011-A
+1.1!I 2.1!U 

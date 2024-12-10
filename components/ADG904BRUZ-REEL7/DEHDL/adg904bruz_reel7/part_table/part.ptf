@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ADG904BRUZ_REEL7'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Analog Devices", "ADG904BRUZ-REEL7" (!) = "", "SOP65P640X120-20N", "Small Outline Packages", "584-ADG904BRUZ-R7", "https://www.mouser.com/Search/Refine.aspx?Keyword=584-ADG904BRUZ-R7", "RF Switch ICs W'Band Absorbtive/Refl've 4:1 MPX IC.", "https://componentsearchengine.com/Datasheets/1/ADG904BRUZ-REEL7.pdf", "1.2 mm"
+END_PART
+
+END.
