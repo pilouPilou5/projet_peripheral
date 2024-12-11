@@ -1029,7 +1029,7 @@
 				)
 			)
 		)
-		(symbol "test_library:MM8130-2600RA2"
+		(symbol "test_library:CONSMA013.062-G"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1037,7 +1037,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -7.6393 5.6021 0)
+				(at -3.81 1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1045,8 +1045,8 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "MM8130-2600RA2"
-				(at -7.6303 -7.6303 0)
+			(property "Value" "CONSMA013.062-G"
+				(at -4.064 -6.858 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1054,7 +1054,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "MM8130-2600RA2:MURATA_MM8130-2600RA2"
+			(property "Footprint" "CONSMA013.062-G:LINX_CONSMA013.062-G"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1082,7 +1082,7 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Murata"
+			(property "MF" "Linx Technologies"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1092,7 +1092,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description_1" "\n                        \n                            SWF Connector Receptacle, Female Socket 50 Ohms Surface Mount Solder\n                        \n"
+			(property "MAXIMUM_PACKAGE_HEIGHT" "4.3mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1122,7 +1122,7 @@
 					(hide yes)
 				)
 			)
-			(property "Check_prices" "https://www.snapeda.com/parts/MM8130-2600RA2/Murata/view-part/?ref=eda"
+			(property "Check_prices" "https://www.snapeda.com/parts/CONSMA013.062-G/Linx/view-part/?ref=eda"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1132,7 +1132,7 @@
 					(hide yes)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/MM8130-2600RA2/Murata/view-part/?ref=snap"
+			(property "STANDARD" "Manufacturer Recommendations"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1142,7 +1142,37 @@
 					(hide yes)
 				)
 			)
-			(property "MP" "MM8130-2600RA2"
+			(property "PARTREV" "A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/CONSMA013.062-G/Linx/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "CONSMA013.062-G"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "\n                        \n                            SMA Plug 50 Ohm .062 PCB Edge Mount\n                        \n"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1162,7 +1192,7 @@
 					(hide yes)
 				)
 			)
-			(property "MANUFACTURER" "MURATA"
+			(property "MANUFACTURER" "Linx Technologies"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1172,29 +1202,158 @@
 					(hide yes)
 				)
 			)
-			(symbol "MM8130-2600RA2_0_0"
-				(rectangle
-					(start -7.62 -5.08)
-					(end 7.62 5.08)
+			(symbol "CONSMA013.062-G_0_0"
+				(circle
+					(center 0 -2.54)
+					(radius 0.254)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-				(pin power_in line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "GND"
+				(polyline
+					(pts
+						(xy -1.016 -1.016) (xy 0 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -3.302) (xy -1.27 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.302) (xy -0.762 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.302) (xy -0.508 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.302) (xy 0.762 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.016) (xy 0 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -3.302) (xy 0.254 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.5875 -2.8575)
+					(end 3.4925 -2.2225)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 1.5875 -0.3175)
+					(end 3.4925 0.3175)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 0)
+					(length 5.08)
+					(name "~"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "GND1"
+					(number "1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1202,35 +1361,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "GND"
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 5.08)
+					(name "~"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "GND2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "GND3"
+					(number "S1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1238,35 +1379,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "GND"
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 5.08)
+					(name "~"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "GND4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "IN"
+					(number "S2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1274,17 +1397,35 @@
 						)
 					)
 				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUT"
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 5.08)
+					(name "~"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "OUT"
+					(number "S3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S4"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1464,13 +1605,13 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 177.8) (xy 49.53 177.8)
+			(xy 33.02 177.8) (xy 59.69 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "01aab779-eefc-44d0-99fa-3dc33cdba04a")
+		(uuid "023f196b-6e4a-4bf6-8ebe-dd5af8ad3bf8")
 	)
 	(wire
 		(pts
@@ -1644,16 +1785,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 172.72) (xy 49.53 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f1da6fe-34ab-4ffa-811b-7e4b8119241b")
-	)
-	(wire
-		(pts
 			(xy 59.69 184.15) (xy 59.69 177.8)
 		)
 		(stroke
@@ -1661,6 +1792,16 @@
 			(type default)
 		)
 		(uuid "709488f3-14ce-4bb5-a610-16776d7dc201")
+	)
+	(wire
+		(pts
+			(xy 33.02 175.26) (xy 60.96 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c31032f-610b-41bd-b867-3d221ecfd389")
 	)
 	(wire
 		(pts
@@ -1714,7 +1855,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 146.05) (xy 60.96 172.72)
+			(xy 60.96 146.05) (xy 60.96 175.26)
 		)
 		(stroke
 			(width 0)
@@ -1801,177 +1942,6 @@
 			(type default)
 		)
 		(uuid "ee39f023-2c56-4116-902c-45d4341509ea")
-	)
-	(symbol
-		(lib_id "test_library:MM8130-2600RA2")
-		(at 39.37 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "004c3a1f-212a-482d-8e3a-b7d7f8bbc086")
-		(property "Reference" "J1"
-			(at 39.37 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MM8130-2600RA2"
-			(at 39.37 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MM8130-2600RA2:MURATA_MM8130-2600RA2"
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Murata"
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\n                        \n                            SWF Connector Receptacle, Female Socket 50 Ohms Surface Mount Solder\n                        \n"
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/MM8130-2600RA2/Murata/view-part/?ref=eda"
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MM8130-2600RA2/Murata/view-part/?ref=snap"
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "MM8130-2600RA2"
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "MURATA"
-			(at 39.37 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "GND3"
-			(uuid "8a21be79-7340-49ea-9f1b-a4c396fc124a")
-		)
-		(pin "GND2"
-			(uuid "034b781f-6c90-44b5-9c0a-c293b0a852ef")
-		)
-		(pin "IN"
-			(uuid "51b6e07f-5f51-4e5d-877b-a6c1f5de043f")
-		)
-		(pin "GND4"
-			(uuid "013b4467-0f12-40ac-86e7-397398cd2424")
-		)
-		(pin "OUT"
-			(uuid "4a17788f-9f8f-421a-b79f-e577ed035d14")
-		)
-		(pin "GND1"
-			(uuid "a5cc929e-f17f-42f6-98ae-adef4f4bc3d4")
-		)
-		(instances
-			(project ""
-				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "test_library:ST0147-00-011-A")
@@ -2222,6 +2192,205 @@
 			(project ""
 				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "test_library:CONSMA013.062-G")
+		(at 30.48 175.26 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "726f3251-f79f-487b-8e2e-7bfbc1e1b7d4")
+		(property "Reference" "J1"
+			(at 29.4072 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CONSMA013.062-G"
+			(at 29.4072 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CONSMA013.062-G:LINX_CONSMA013.062-G"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Linx Technologies"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "4.3mm"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CONSMA013.062-G/Linx/view-part/?ref=eda"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "A"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CONSMA013.062-G/Linx/view-part/?ref=snap"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "CONSMA013.062-G"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            SMA Plug 50 Ohm .062 PCB Edge Mount\n                        \n"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Linx Technologies"
+			(at 30.48 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7d88313-af0b-42c0-aca7-6c1a7327af72")
+		)
+		(pin "S2"
+			(uuid "edc10b5a-d594-4cde-a048-b5dd01bcef9a")
+		)
+		(pin "S1"
+			(uuid "4ecbb203-ca45-48b7-854c-cd9c96a0532c")
+		)
+		(pin "S3"
+			(uuid "8b6a1e0a-17e7-4b8d-b4b2-584b2082df45")
+		)
+		(pin "S4"
+			(uuid "a6090b6d-a455-46b0-9887-39e5a065422f")
+		)
+		(instances
+			(project ""
+				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
+					(reference "J1")
 					(unit 1)
 				)
 			)
