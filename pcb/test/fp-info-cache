@@ -1,4 +1,4 @@
-24192782166894715
+24194516639646260
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -97985,3 +97985,10 @@ Integrated Circuit
 0
 20
 20
+test_footprint_library
+jumper20
+
+
+0
+2
+2
