@@ -597,6 +597,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "C:/Users/paulj/Documents/projet_peripheral/components/ST0147-00-011-A/3D/ST0147-00-011-A.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "test_footprint_library:ANTC3016X55N"
 		(layer "F.Cu")
@@ -882,6 +893,17 @@
 			(uuid "caaa9408-5070-4193-b77d-d6b4dc78aa49")
 		)
 		(model "ST0147-00-011-A.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "C:/Users/paulj/Documents/projet_peripheral/components/ST0147-00-011-A/3D/ST0147-00-011-A.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2676,6 +2698,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "C:/Users/paulj/Documents/projet_peripheral/components/ST0147-00-011-A/3D/ST0147-00-011-A.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal"
 		(layer "F.Cu")
@@ -4418,6 +4451,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "C:/Users/paulj/Documents/projet_peripheral/components/ADG904BRUZ-REEL7/3D/ADG904BRUZ-REEL7.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "test_footprint_library:LINX_CONSMA013.062-G"
 		(layer "F.Cu")
@@ -5385,6 +5429,17 @@
 			(uuid "70bde1b9-5e34-4931-a1ba-e0fe2a54da64")
 		)
 		(model "ST0147-00-011-A.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "C:/Users/paulj/Documents/projet_peripheral/components/ST0147-00-011-A/3D/ST0147-00-011-A.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6717,6 +6772,22 @@
 		(uuid "debf3a8b-a843-4451-8116-8ea6fef3fb55")
 	)
 	(segment
+		(start 136.3 92.937)
+		(end 136.312 92.925)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 6)
+		(uuid "970c68ef-085f-4fa3-821f-8d63468bbf45")
+	)
+	(segment
+		(start 136.3 99.5975)
+		(end 136.3 92.937)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 6)
+		(uuid "dc42e0ad-aee0-4fe4-acb7-14ee5ee55320")
+	)
+	(segment
 		(start 240.34 155.24)
 		(end 240.22 155.36)
 		(width 0.2)
@@ -7157,7 +7228,7 @@
 		)
 		(polygon
 			(pts
-				(xy 142.4 58) (xy 142.4 100) (xy 253.106751 100) (xy 253.106751 100) (xy 253.106751 58)
+				(xy 142.4 58) (xy 142.4 100) (xy 253.106751 100) (xy 253.106751 58)
 			)
 		)
 		(filled_polygon
@@ -7636,7 +7707,7 @@
 		)
 		(polygon
 			(pts
-				(xy 25.393249 58) (xy 25.393249 100) (xy 136 100) (xy 136 100) (xy 136 58) (xy 25.393249 58)
+				(xy 25.393249 58) (xy 25.393249 100) (xy 136 100) (xy 136 58)
 			)
 		)
 		(filled_polygon
