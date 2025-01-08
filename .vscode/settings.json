@@ -1,0 +1,10 @@
+{
+    "nrf-connect.applications": [
+        "${workspaceFolder}\\software\\tx",
+        "${workspaceFolder}\\software\\rx"
+    ],
+    "files.associations": {
+        "direction.h": "c",
+        "bluetooth.h": "c"
+    }
+}
