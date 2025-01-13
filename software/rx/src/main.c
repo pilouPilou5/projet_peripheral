@@ -13,11 +13,19 @@
 
 #include <zephyr/bluetooth/bluetooth.h>
 #include <zephyr/bluetooth/direction.h>
+#include <stdio.h>
 
 #define DEVICE_NAME CONFIG_BT_DEVICE_NAME
 #define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)
 #define PEER_NAME_LEN_MAX 30
 #define M_PI 3.1415
+#define NB_ANT 4
+float pi = M_PI ;
+#define f  2400000000 
+#define  c  300000000 
+float lbd = c/(float)f ;
+float  d ;
+
 /* The Bluetooth Core specification allows controller to wait 6
  * periodic advertising events for
  * synchronization establishment, hence timeout must be longer than that.
@@ -41,8 +49,7 @@ static K_SEM_DEFINE(sem_per_sync_lost, 0, 1);
 /* Example sequence of antenna switch patterns for antenna matrix designed by
  * Nordic. For more information about antenna switch patterns see README.rst.
  */
-static const uint8_t ant_patterns[] = { 0x2, 0x0, 0x5, 0x6, 0x1, 0x4,
-					0xC, 0x9, 0xE, 0xD, 0x8, 0xA };
+static const uint8_t ant_patterns[] = { 0x3, 0x1, 0x2, 0x4 };
 #endif /* CONFIG_BT_DF_CTE_RX_AOA */
 
 static inline uint32_t adv_interval_to_ms(uint16_t interval)
@@ -144,7 +151,48 @@ static void recv_cb(struct bt_le_per_adv_sync *sync,
 	       info->rssi, cte_type2str(info->cte_type), buf->len, data_str);
 }
 
+static float theta_est(struct bt_df_per_adv_sync_iq_samples_report const *report){
+	float theta_mean ;
+	int nb_phase  = (report->sample_count - 8); // les 8 premier echantillons sont des references 
+	int nb_block = nb_phase%NB_ANT ; 
+	float tab_phase [nb_phase] ; //tableau de phase
+	float tab_mean_phase[NB_ANT]; // tableau des moyennes des phases par anthenne  
+	float tab_dlt_phase[NB_ANT-1]; // tableau de diférence de phase 
+	float tab_theta_est[NB_ANT-1]; // tableau des estimation de theta
+	
 
+	for (int i =8 ;i <nb_phase+8; i++ ){
+		int8_t I = report->sample[i].i; 
+		int8_t Q = report->sample[i].q;
+		float phase = atan2(Q,I);
+		tab_phase[i-8]  = phase;
+		//printf("Sample %d: Phase = %.6f\n", i-8,phase);
+		
+	}
+	for(int i = 0 ; i<NB_ANT; i++){
+		float sum ;
+		for(int j = 0 ; j<nb_block;j++){
+			sum += tab_phase[i+4*j];
+		}
+		tab_mean_phase[i] = sum/nb_block ;
+	}
+	//printf("lambda : %f		d : %f\n", lbd, d);
+	float sum = 0;
+	for (int i =0 ;i <NB_ANT-1; i++ ){
+		tab_dlt_phase[i] = tab_phase [i+1]  - tab_phase [i];
+		tab_theta_est[i] = asinf((lbd*tab_dlt_phase[i])/(2*pi*d));
+
+		//printf("num = %f \n",lbd*tab_dlt_phase[i]);
+		//printf("int arcsin = %f\n",(lbd*tab_dlt_phase[i])/(2*pi*d));
+		//printf("diff %d  = %f\n",i+1,tab_dlt_phase[i]) ;
+		//printf("theta estime %d  = %f\n",i,tab_theta_est[i]) ;
+		
+		sum += tab_theta_est[i] ; 
+	}
+	theta_mean = sum/(float)(NB_ANT-1);
+	
+	return(theta_mean);
+}
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 static void cte_recv_cb(struct bt_le_per_adv_sync *sync,
                         struct bt_df_per_adv_sync_iq_samples_report const *report)
@@ -159,31 +207,13 @@ static void cte_recv_cb(struct bt_le_per_adv_sync *sync,
 
     // Vérification du type d'échantillons
     if (report->sample_type == BT_DF_IQ_SAMPLE_8_BITS_INT) {
-		
-        // Affichage des phases pour des échantillons IQ 8 bits
-        for (i = 0; i < report->sample_count; i++) {
-            int8_t I = report->sample[i].i; // Composante In-phase
-            int8_t Q = report->sample[i].q; // Composante Quadrature
+		float theta;
+		theta = theta_est(report);
+		printf("theta moyen = %f\n\n",theta);
 
-			
-            //Calcul de la phase (en radians) de l'échantillon IQ
-            float phase = atan2( Q,I);
-			float pi = M_PI ; 
-			
-            //Convertir la phase en degrés pour une meilleure lisibilité
-			
-            float phase_deg = phase * (180.0/ M_PI);
-			if(i==5){
-			//printk("Sample %d: I = %d, Q = %d\n", i, I, Q);
-            //printk("Sample %d: Phase = %.6f degrees\n", i, phase);
-			printf("phase = %f\n", phase_deg);
-			
-			}
 
-        }
     } else if (report->sample_type == BT_DF_IQ_SAMPLE_16_BITS_INT) {
         // Affichage des phases pour des échantillons IQ 16 bits
-		
         for (i = 0; i < report->sample_count; i++) {
             int16_t I = report->sample16[i].i; // Composante In-phase
             int16_t Q = report->sample16[i].q; // Composante Quadrature
@@ -193,11 +223,8 @@ static void cte_recv_cb(struct bt_le_per_adv_sync *sync,
 
             // Convertir la phase en degrés pour une meilleure lisibilité
             double phase_deg = phase * (180.0/ M_PI);
+			printf("!!16 Bit!!, phase = %f\n", phase_deg);
 			
-			printk("16 BIT !!!!\n");
-            if(i==5){
-				printf("phase = %f\n", phase_deg);
-			}
         }
     } else {
         printk("Unknown IQ sample type.\n");
@@ -224,17 +251,17 @@ static void scan_recv(const struct bt_le_scan_recv_info *info,
 
 	bt_addr_le_to_str(info->addr, le_addr, sizeof(le_addr));
 
-	printk("[DEVICE]: %s, AD evt type %u, Tx Pwr: %i, RSSI %i %s C:%u S:%u "
-	       "D:%u SR:%u E:%u Prim: %s, Secn: %s, Interval: 0x%04x (%u ms), "
-	       "SID: %u\n",
-	       le_addr, info->adv_type, info->tx_power, info->rssi, name,
-	       (info->adv_props & BT_GAP_ADV_PROP_CONNECTABLE) != 0,
-	       (info->adv_props & BT_GAP_ADV_PROP_SCANNABLE) != 0,
-	       (info->adv_props & BT_GAP_ADV_PROP_DIRECTED) != 0,
-	       (info->adv_props & BT_GAP_ADV_PROP_SCAN_RESPONSE) != 0,
-	       (info->adv_props & BT_GAP_ADV_PROP_EXT_ADV) != 0, phy2str(info->primary_phy),
-	       phy2str(info->secondary_phy), info->interval, adv_interval_to_ms(info->interval),
-	       info->sid);
+	// printk("[DEVICE]: %s, AD evt type %u, Tx Pwr: %i, RSSI %i %s C:%u S:%u "
+	//        "D:%u SR:%u E:%u Prim: %s, Secn: %s, Interval: 0x%04x (%u ms), "
+	//        "SID: %u\n",
+	//        le_addr, info->adv_type, info->tx_power, info->rssi, name,
+	//        (info->adv_props & BT_GAP_ADV_PROP_CONNECTABLE) != 0,
+	//        (info->adv_props & BT_GAP_ADV_PROP_SCANNABLE) != 0,
+	//        (info->adv_props & BT_GAP_ADV_PROP_DIRECTED) != 0,
+	//        (info->adv_props & BT_GAP_ADV_PROP_SCAN_RESPONSE) != 0,
+	//        (info->adv_props & BT_GAP_ADV_PROP_EXT_ADV) != 0, phy2str(info->primary_phy),
+	//        phy2str(info->secondary_phy), info->interval, adv_interval_to_ms(info->interval),
+	//        info->sid);
 
 	if (!per_adv_found && info->interval) {
 		sync_create_timeout_ms =
@@ -366,6 +393,8 @@ static void scan_disable(void)
 
 int main(void)
 {
+	d = lbd/2 ;
+	
 	int err;
 
 	printk("Starting Connectionless Locator Demo\n");

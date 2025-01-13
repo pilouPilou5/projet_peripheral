@@ -1112,7 +1112,7 @@ zephyr_udc0: &usbd {
  status = "okay";
 };
 # 0 "<command-line>" 2
-# 1 "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.overlay" 1
+# 1 "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.overlay" 1
 
 
 
@@ -1124,7 +1124,7 @@ zephyr_udc0: &usbd {
 
 
 
- dfe-antenna-num = <12>;
+ dfe-antenna-num = <4>;
 
 
 

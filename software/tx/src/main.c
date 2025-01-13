@@ -18,7 +18,7 @@
 /* Length of CTE in unit of 8[us] */
 #define CTE_LEN (0x14U)
 /* Number of CTE send in single periodic advertising train */
-#define PER_ADV_EVENT_CTE_COUNT 5
+#define PER_ADV_EVENT_CTE_COUNT 1 // valeur de base 5
 
 static const struct bt_data ad[] = {
 	BT_DATA(BT_DATA_NAME_COMPLETE, CONFIG_BT_DEVICE_NAME, sizeof(CONFIG_BT_DEVICE_NAME) - 1),
@@ -155,6 +155,7 @@ int main(void)
 	bt_addr_le_to_str(&oob_local.addr, addr_s, sizeof(addr_s));
 
 	printk("Started extended advertising as %s\n", addr_s);
+	printk("test2\n");
 
 	return 0;
 }

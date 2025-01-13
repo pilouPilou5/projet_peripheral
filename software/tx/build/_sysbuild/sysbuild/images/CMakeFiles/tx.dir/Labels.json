@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx"
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx.rule"
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx-complete.rule"
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx-complete.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-build.rule"
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-build.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-configure.rule"
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-configure.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-download.rule"
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-download.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-install.rule"
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-install.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-mkdir.rule"
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-mkdir.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-patch.rule"
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-patch.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-update.rule"
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-update.rule"
 		}
 	],
 	"target" : 

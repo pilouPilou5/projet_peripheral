@@ -1,7 +1,7 @@
 cmake:
   application:
-    configuration-dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx
-    source-dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx
+    configuration-dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx
+    source-dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx
   board:
     name: nrf52833dk
     qualifiers: nrf52833
@@ -14,7 +14,7 @@ cmake:
      - C:/ncs/v2.9.0/zephyr/snippets/bt-ll-sw-split/bt-ll-sw-split.overlay
     files:
      - C:/ncs/v2.9.0/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833.dts
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.overlay
+     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.overlay
      - C:/ncs/v2.9.0/zephyr/snippets/bt-ll-sw-split/bt-ll-sw-split.overlay
     include-dirs:
      - C:/ncs/v2.9.0/nrf/include
@@ -33,19 +33,19 @@ cmake:
      - C:/ncs/v2.9.0/zephyr/dts/arc
      - C:/ncs/v2.9.0/zephyr/dts
     user-files:
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.overlay
+     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.overlay
   kconfig:
     extra-user-files:
      - C:/ncs/v2.9.0/zephyr/snippets/bt-ll-sw-split/bt-ll-sw-split.conf
     files:
      - C:/ncs/v2.9.0/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833_defconfig
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx/prj.conf
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.conf
+     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/prj.conf
+     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.conf
      - C:/ncs/v2.9.0/zephyr/snippets/bt-ll-sw-split/bt-ll-sw-split.conf
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx/build/rx/zephyr/.config.sysbuild
+     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/rx/zephyr/.config.sysbuild
     user-files:
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx/prj.conf
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.conf
+     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/prj.conf
+     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.conf
   toolchain:
     name: zephyr
     path: C:/ncs/toolchains/b620d30767/opt/zephyr-sdk

@@ -181,7 +181,7 @@ set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/radio@400010
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/radio@40001000|interrupts" "1;1;")
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/radio@40001000|zephyr,deferred-init" "False")
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/radio@40001000|dfe-supported" "True")
-set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/radio@40001000|dfe-antenna-num" "12")
+set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/radio@40001000|dfe-antenna-num" "4")
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/radio@40001000|dfe-pdu-antenna" "0")
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/radio@40001000|ieee802154-supported" "True")
 set_target_properties(${DEVICETREE_TARGET} PROPERTIES "DT_PROP|/soc/radio@40001000|ble-2mbps-supported" "True")
