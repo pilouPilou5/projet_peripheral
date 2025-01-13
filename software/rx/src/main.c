@@ -7,6 +7,9 @@
 #include <stddef.h>
 #include <errno.h>
 #include <zephyr/kernel.h>
+#include <zephyr/bluetooth/direction.h>
+#include <zephyr/bluetooth/hci_types.h>
+#include <zephyr/bluetooth/hci_vs.h>
 
 #include <zephyr/bluetooth/bluetooth.h>
 #include <zephyr/bluetooth/direction.h>
@@ -14,6 +17,7 @@
 #define DEVICE_NAME CONFIG_BT_DEVICE_NAME
 #define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)
 #define PEER_NAME_LEN_MAX 30
+#define M_PI 3.1415
 /* The Bluetooth Core specification allows controller to wait 6
  * periodic advertising events for
  * synchronization establishment, hence timeout must be longer than that.
@@ -140,15 +144,66 @@ static void recv_cb(struct bt_le_per_adv_sync *sync,
 	       info->rssi, cte_type2str(info->cte_type), buf->len, data_str);
 }
 
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 static void cte_recv_cb(struct bt_le_per_adv_sync *sync,
-			struct bt_df_per_adv_sync_iq_samples_report const *report)
+                        struct bt_df_per_adv_sync_iq_samples_report const *report)
 {
-	printk("CTE[%u]: samples count %d, cte type %s, slot durations: %u [us], "
-	       "packet status %s, RSSI %i\n",
-	       bt_le_per_adv_sync_get_index(sync), report->sample_count,
-	       cte_type2str(report->cte_type), report->slot_durations,
-	       packet_status2str(report->packet_status), report->rssi);
+    int i;
+
+    printk("CTE[%u]: samples count %d, cte type %s, slot durations: %u [us], "
+           "packet status %s, RSSI %i\n",
+           bt_le_per_adv_sync_get_index(sync), report->sample_count,
+           cte_type2str(report->cte_type), report->slot_durations,
+           packet_status2str(report->packet_status), report->rssi);
+
+    // Vérification du type d'échantillons
+    if (report->sample_type == BT_DF_IQ_SAMPLE_8_BITS_INT) {
+		
+        // Affichage des phases pour des échantillons IQ 8 bits
+        for (i = 0; i < report->sample_count; i++) {
+            int8_t I = report->sample[i].i; // Composante In-phase
+            int8_t Q = report->sample[i].q; // Composante Quadrature
+
+			
+            //Calcul de la phase (en radians) de l'échantillon IQ
+            float phase = atan2( Q,I);
+			float pi = M_PI ; 
+			
+            //Convertir la phase en degrés pour une meilleure lisibilité
+			
+            float phase_deg = phase * (180.0/ M_PI);
+			if(i==5){
+			//printk("Sample %d: I = %d, Q = %d\n", i, I, Q);
+            //printk("Sample %d: Phase = %.6f degrees\n", i, phase);
+			printf("phase = %f\n", phase_deg);
+			
+			}
+
+        }
+    } else if (report->sample_type == BT_DF_IQ_SAMPLE_16_BITS_INT) {
+        // Affichage des phases pour des échantillons IQ 16 bits
+		
+        for (i = 0; i < report->sample_count; i++) {
+            int16_t I = report->sample16[i].i; // Composante In-phase
+            int16_t Q = report->sample16[i].q; // Composante Quadrature
+
+            // Calcul de la phase (en radians) de l'échantillon IQ
+            float phase = atan2f(Q,I);
+
+            // Convertir la phase en degrés pour une meilleure lisibilité
+            double phase_deg = phase * (180.0/ M_PI);
+			
+			printk("16 BIT !!!!\n");
+            if(i==5){
+				printf("phase = %f\n", phase_deg);
+			}
+        }
+    } else {
+        printk("Unknown IQ sample type.\n");
+    }
 }
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 static struct bt_le_per_adv_sync_cb sync_callbacks = {
 	.synced = sync_cb,
