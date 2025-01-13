@@ -569,164 +569,6 @@
 				)
 			)
 		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -848,31 +690,50 @@
 				)
 			)
 		)
-		(symbol "Jumper:Jumper_2_Bridged"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim yes)
+		(symbol "ST0147-00-011-A_1"
+			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 1.905 0)
+			(property "Reference" "ANT1"
+				(at 19.05 0.0001 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Jumper_2_Bridged"
-				(at 0 -2.54 0)
+			(property "Value" "ST0147-00-011-A"
+				(at 19.05 -2.5399 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 0 0)
+			(property "Footprint" "ANTC3016X55N"
+				(at 19.05 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf"
+				(at 19.05 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm"
+				(at 2.286 5.334 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -880,85 +741,72 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
+			(property "Height" "0.55"
+				(at 19.05 -394.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Description" "Jumper, 2-pole, closed/bridged"
-				(at 0 0 0)
+			(property "Mouser Part Number" ""
+				(at 19.05 -494.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
+			(property "Mouser Price/Stock" ""
+				(at 19.05 -594.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
+			(property "Manufacturer_Name" "Amphenol RF"
+				(at 19.05 -694.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(symbol "Jumper_2_Bridged_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
+			(property "Manufacturer_Part_Number" "ST0147-00-011-A"
+				(at 19.05 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "ST0147-00-011-A_1_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 17.78 -5.08)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Bridged_0_1"
-				(arc
-					(start 1.524 0.254)
-					(mid 0 0.762)
-					(end -1.524 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Bridged_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
+				(pin input line
+					(at 0 0 0)
+					(length 5.08)
+					(name "FEED"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -973,10 +821,312 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
+				(pin input line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ST0147-00-011-A_2"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "ANT2"
+				(at 19.05 0.0001 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ST0147-00-011-A"
+				(at 19.05 -2.5399 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "ANTC3016X55N"
+				(at 19.05 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf"
+				(at 19.05 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm"
+				(at 2.286 5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.55"
+				(at 19.05 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 19.05 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 19.05 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Amphenol RF"
+				(at 19.05 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "ST0147-00-011-A"
+				(at 19.05 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "ST0147-00-011-A_2_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 17.78 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at 0 0 0)
+					(length 5.08)
+					(name "FEED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ST0147-00-011-A_3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "ANT3"
+				(at 19.05 0.0001 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ST0147-00-011-A"
+				(at 19.05 -2.5399 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "ANTC3016X55N"
+				(at 19.05 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf"
+				(at 19.05 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm"
+				(at 2.286 5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.55"
+				(at 19.05 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 19.05 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 19.05 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Amphenol RF"
+				(at 19.05 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "ST0147-00-011-A"
+				(at 19.05 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "ST0147-00-011-A_3_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 17.78 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at 0 0 0)
+					(length 5.08)
+					(name "FEED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2230,22 +2380,22 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "ANT"
-				(at 19.05 7.62 0)
+			(property "Reference" "ANT4"
+				(at 19.05 0.0001 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 				)
 			)
 			(property "Value" "ST0147-00-011-A"
-				(at 19.05 5.08 0)
+				(at 19.05 -2.5399 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 				)
 			)
 			(property "Footprint" "ANTC3016X55N"
@@ -2357,7 +2507,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin input line
 					(at 0 -2.54 0)
 					(length 5.08)
 					(name "NC"
@@ -2379,6 +2529,12 @@
 		)
 	)
 	(junction
+		(at 241.3 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1239411a-6325-4ea7-8272-484dd8ae4e76")
+	)
+	(junction
 		(at 148.59 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2397,10 +2553,10 @@
 		(uuid "3dea2fb8-47b9-418f-8fc1-93c230de204f")
 	)
 	(junction
-		(at 242.57 92.71)
+		(at 172.72 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3e3ec554-1936-452b-a535-3f89d65ffa9f")
+		(uuid "45f903ab-f4aa-45ae-ae9e-632f35b9bbce")
 	)
 	(junction
 		(at 148.59 133.35)
@@ -2421,10 +2577,10 @@
 		(uuid "5baec095-63ac-41f1-9a79-9a7496ebfea6")
 	)
 	(junction
-		(at 242.57 85.09)
+		(at 38.1 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5c376910-5d8e-4b0f-aa52-03a2184e153e")
+		(uuid "6b8aaf1e-62cd-4996-aa3b-806c7882c8ad")
 	)
 	(junction
 		(at 220.98 132.08)
@@ -2443,6 +2599,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82c1b26b-653a-4e84-96d4-7de4403caccd")
+	)
+	(junction
+		(at 104.14 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9062bfc3-3c22-46e1-9e61-4bc1c3a6c7eb")
 	)
 	(junction
 		(at 148.59 140.97)
@@ -2476,16 +2638,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 180.34) (xy 162.56 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02260987-a582-475f-83e4-61a8c8360b0e")
-	)
-	(wire
-		(pts
 			(xy 33.02 177.8) (xy 59.69 177.8)
 		)
 		(stroke
@@ -2496,43 +2648,33 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 30.48) (xy 177.8 30.48)
+			(xy 38.1 27.94) (xy 44.45 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "08faf8dc-b7eb-420a-9c84-1b40eb7541b4")
+		(uuid "0acf36a2-6fde-4e43-9575-38426100af73")
 	)
 	(wire
 		(pts
-			(xy 148.59 182.88) (xy 146.05 182.88)
+			(xy 172.72 31.75) (xy 179.07 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "114ef0a7-08ac-4614-97a7-8e093a02b0bc")
+		(uuid "122be93b-de7f-4a2d-9a6b-b055e70bd298")
 	)
 	(wire
 		(pts
-			(xy 162.56 180.34) (xy 162.56 189.23)
+			(xy 31.75 27.94) (xy 38.1 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14eaf94a-5fe6-446f-9899-101028e21117")
-	)
-	(wire
-		(pts
-			(xy 248.92 92.71) (xy 242.57 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "155b6d89-f125-49ad-930d-8af48ce09dbb")
+		(uuid "1587de61-e103-4975-bef0-ce894d3007e2")
 	)
 	(wire
 		(pts
@@ -2543,6 +2685,16 @@
 			(type default)
 		)
 		(uuid "164a0e4d-7777-4e6f-bd42-eee3b1356cea")
+	)
+	(wire
+		(pts
+			(xy 15.24 130.81) (xy 15.24 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17ac119e-0af4-4c75-947d-8d7c8c96eb60")
 	)
 	(wire
 		(pts
@@ -2576,13 +2728,23 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 182.88) (xy 158.75 182.88)
+			(xy 151.13 31.75) (xy 158.75 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "288a496c-d523-4ed2-b0ea-dda082ae582a")
+		(uuid "2609cae0-c95b-47ce-badd-cd2ef6d12950")
+	)
+	(wire
+		(pts
+			(xy 147.32 48.26) (xy 83.82 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27697927-4806-4e35-b3e5-1eddbc7bcdb3")
 	)
 	(wire
 		(pts
@@ -2593,16 +2755,6 @@
 			(type default)
 		)
 		(uuid "2c919f90-1629-44a9-b8a5-f0bf12596bc2")
-	)
-	(wire
-		(pts
-			(xy 236.22 85.09) (xy 242.57 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d80286c-6d93-4621-873c-a0e702898fec")
 	)
 	(wire
 		(pts
@@ -2636,16 +2788,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 182.88) (xy 146.05 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35a0b095-c570-4bc9-b214-c4fdbb235b8c")
-	)
-	(wire
-		(pts
 			(xy 92.71 133.35) (xy 92.71 135.89)
 		)
 		(stroke
@@ -2666,13 +2808,33 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 48.26) (xy 125.73 48.26)
+			(xy 146.05 123.19) (xy 146.05 185.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "38f88a01-d308-45d2-9519-b8edd2b985b3")
+		(uuid "3864fe84-459e-4c74-842f-0d5b5dfa556c")
+	)
+	(wire
+		(pts
+			(xy 165.1 189.23) (xy 165.1 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d3e88ae-0810-4225-8467-75c46002feb6")
+	)
+	(wire
+		(pts
+			(xy 143.51 182.88) (xy 160.02 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ea88b45-2ad9-4331-963e-4e553e8b647a")
 	)
 	(wire
 		(pts
@@ -2716,16 +2878,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 30.48) (xy 130.81 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "480c3295-6467-4789-8662-2ab39ea5e6b8")
-	)
-	(wire
-		(pts
 			(xy 220.98 132.08) (xy 234.95 132.08)
 		)
 		(stroke
@@ -2746,13 +2898,23 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 30.48) (xy 41.91 34.29)
+			(xy 234.95 34.29) (xy 241.3 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4b72b026-a2b1-4e0c-8230-63535355196a")
+		(uuid "4daf019c-1a82-4a6a-b6df-8b808b55dcb5")
+	)
+	(wire
+		(pts
+			(xy 208.28 34.29) (xy 227.33 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4df9a4ff-a09e-47c2-a67f-02ecb8564281")
 	)
 	(wire
 		(pts
@@ -2763,16 +2925,6 @@
 			(type default)
 		)
 		(uuid "4fea6ff7-d1c6-4187-82ac-9503867ba8b7")
-	)
-	(wire
-		(pts
-			(xy 71.12 128.27) (xy 81.28 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53ac3bcc-3dc8-451e-8724-cb28ec2f7540")
 	)
 	(wire
 		(pts
@@ -2816,13 +2968,13 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 92.71) (xy 242.57 99.06)
+			(xy 241.3 34.29) (xy 247.65 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "646ac328-9faa-4859-9699-3ab370101909")
+		(uuid "611d3176-07dd-4740-8518-cf67c9ff75f1")
 	)
 	(wire
 		(pts
@@ -2836,13 +2988,13 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 161.29) (xy 172.72 30.48)
+			(xy 83.82 30.48) (xy 90.17 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6cab5649-2d4f-4949-bde9-d8f8f6bfdfa4")
+		(uuid "6e6dfcb2-226d-49c1-949f-6930e6b6f8f6")
 	)
 	(wire
 		(pts
@@ -2876,13 +3028,13 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 185.42) (xy 143.51 125.73)
+			(xy 151.13 161.29) (xy 151.13 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "71f6534d-b709-4171-8e9d-d406783d6088")
+		(uuid "75afde6b-0459-438b-b08d-934775068a99")
 	)
 	(wire
 		(pts
@@ -2916,26 +3068,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 130.81) (xy 35.56 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "806943a1-9a88-4c43-ba1b-9d64b3a379a5")
-	)
-	(wire
-		(pts
-			(xy 157.48 185.42) (xy 154.94 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81d849f1-cb60-401f-8f83-7173ae2eef74")
-	)
-	(wire
-		(pts
 			(xy 92.71 143.51) (xy 107.95 143.51)
 		)
 		(stroke
@@ -2946,16 +3078,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 30.48) (xy 208.28 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87887ad9-a4d7-4799-b485-d3fffcced91f")
-	)
-	(wire
-		(pts
 			(xy 147.32 130.81) (xy 147.32 48.26)
 		)
 		(stroke
@@ -2963,16 +3085,6 @@
 			(type default)
 		)
 		(uuid "89e55be3-7ffd-4519-8755-4d0f790b7a4f")
-	)
-	(wire
-		(pts
-			(xy 125.73 48.26) (xy 125.73 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a72d6e6-a833-4135-b952-f3f6f8efdef1")
 	)
 	(wire
 		(pts
@@ -3006,6 +3118,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 31.75) (xy 172.72 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95f41da0-a85f-466a-99c8-8b5814e1ee53")
+	)
+	(wire
+		(pts
 			(xy 250.19 134.62) (xy 256.54 134.62)
 		)
 		(stroke
@@ -3036,6 +3158,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 185.42) (xy 146.05 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d2a930e-76eb-412f-9f48-89bf6c93b68f")
+	)
+	(wire
+		(pts
 			(xy 148.59 135.89) (xy 148.59 140.97)
 		)
 		(stroke
@@ -3043,16 +3175,6 @@
 			(type default)
 		)
 		(uuid "a25a42f6-ae81-401e-982c-4c4346519c97")
-	)
-	(wire
-		(pts
-			(xy 165.1 189.23) (xy 173.99 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a43f3e9d-7e7a-4da6-9ab5-a8395259452e")
 	)
 	(wire
 		(pts
@@ -3066,6 +3188,26 @@
 	)
 	(wire
 		(pts
+			(xy 15.24 130.81) (xy 107.95 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7a6cd05-6395-4f7c-83cc-c49b3518bb4a")
+	)
+	(wire
+		(pts
+			(xy 165.1 187.96) (xy 170.18 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae12dbd7-b8f8-4628-9ff2-41245ecc8210")
+	)
+	(wire
+		(pts
 			(xy 92.71 116.84) (xy 92.71 123.19)
 		)
 		(stroke
@@ -3073,6 +3215,16 @@
 			(type default)
 		)
 		(uuid "b3d6e9bb-2bb4-4b0b-8ef6-4d7970d4215c")
+	)
+	(wire
+		(pts
+			(xy 15.24 27.94) (xy 24.13 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5440ba0-8c32-4942-b024-0ac6b444342a")
 	)
 	(wire
 		(pts
@@ -3086,6 +3238,26 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 182.88) (xy 143.51 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beee9d64-0f55-4991-81fb-f894d9c3c370")
+	)
+	(wire
+		(pts
+			(xy 99.06 161.29) (xy 151.13 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4b24fca-fc96-4f2c-ac06-8595d52cdbd3")
+	)
+	(wire
+		(pts
 			(xy 220.98 132.08) (xy 220.98 133.35)
 		)
 		(stroke
@@ -3096,23 +3268,23 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 85.09) (xy 242.57 85.09)
+			(xy 97.79 30.48) (xy 104.14 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c90f9bff-9432-40ee-8ae4-2c9be9b666b1")
+		(uuid "caa76b11-d519-41a4-a7e4-ccfe94c8c62e")
 	)
 	(wire
 		(pts
-			(xy 144.78 185.42) (xy 143.51 185.42)
+			(xy 83.82 48.26) (xy 83.82 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cb806dd9-0b47-4fff-ad60-2548cf54eead")
+		(uuid "cc458fff-79aa-463c-b6f2-01cb698caebb")
 	)
 	(wire
 		(pts
@@ -3146,16 +3318,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 30.48) (xy 208.28 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6f6a127-ff52-452b-ad5e-53162396d5c9")
-	)
-	(wire
-		(pts
 			(xy 234.95 148.59) (xy 234.95 137.16)
 		)
 		(stroke
@@ -3166,33 +3328,13 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 85.09) (xy 242.57 81.28)
+			(xy 208.28 138.43) (xy 208.28 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dca67e63-8ce6-43dc-afe2-d622f59aa2be")
-	)
-	(wire
-		(pts
-			(xy 236.22 92.71) (xy 242.57 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfab9abf-2e6f-4085-8db8-880b5a0a247b")
-	)
-	(wire
-		(pts
-			(xy 173.99 189.23) (xy 173.99 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e247f225-2943-46d3-b036-2710b8a9bcbd")
+		(uuid "dd439a12-ae44-4138-9b41-5dd1e476428a")
 	)
 	(wire
 		(pts
@@ -3226,16 +3368,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 161.29) (xy 172.72 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee39f023-2c56-4116-902c-45d4341509ea")
-	)
-	(wire
-		(pts
 			(xy 92.71 143.51) (xy 92.71 156.21)
 		)
 		(stroke
@@ -3254,18 +3386,39 @@
 		)
 		(uuid "f2f246df-bbf9-4f32-a33e-28f7abf50c67")
 	)
+	(wire
+		(pts
+			(xy 71.12 128.27) (xy 81.28 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5db3992-30dc-4745-ac36-a55c9b94911f")
+	)
+	(wire
+		(pts
+			(xy 104.14 30.48) (xy 110.49 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fffb4d9d-12bc-4864-a39f-d6c97687beb3")
+	)
 	(symbol
+		(lib_name "ST0147-00-011-A_2")
 		(lib_id "test_library:ST0147-00-011-A")
-		(at 177.8 30.48 0)
+		(at 110.49 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0104e1cd-87bf-4757-b7f4-f42e54e85204")
-		(property "Reference" "ANT3"
-			(at 196.85 30.4799 0)
+		(uuid "01e50a6b-3f87-48f0-8169-89fd36122a61")
+		(property "Reference" "ANT2"
+			(at 129.54 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3274,7 +3427,7 @@
 			)
 		)
 		(property "Value" "ST0147-00-011-A"
-			(at 196.85 33.0199 0)
+			(at 129.54 33.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3283,7 +3436,7 @@
 			)
 		)
 		(property "Footprint" "ANTC3016X55N"
-			(at 196.85 125.4 0)
+			(at 129.54 125.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,7 +3446,7 @@
 			)
 		)
 		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf"
-			(at 196.85 225.4 0)
+			(at 129.54 225.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3303,7 +3456,7 @@
 			)
 		)
 		(property "Description" "RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm"
-			(at 180.086 25.146 0)
+			(at 112.776 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3312,7 +3465,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 196.85 425.4 0)
+			(at 129.54 425.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3322,7 +3475,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 196.85 525.4 0)
+			(at 129.54 525.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3332,7 +3485,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 196.85 625.4 0)
+			(at 129.54 625.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3342,7 +3495,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amphenol RF"
-			(at 196.85 725.4 0)
+			(at 129.54 725.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3352,7 +3505,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ST0147-00-011-A"
-			(at 196.85 825.4 0)
+			(at 129.54 825.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3362,15 +3515,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "0abb6913-cc52-49eb-9956-bbaf56ffca18")
+			(uuid "992b8fb8-bb8a-4187-ab7f-88de45e84eec")
 		)
 		(pin "1"
-			(uuid "1660ca16-fa0c-46f1-ada9-1c04c871033f")
+			(uuid "a9ff6dbb-ba04-40a4-96b0-642800cd37ca")
 		)
 		(instances
 			(project "test"
 				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "ANT3")
+					(reference "ANT2")
 					(unit 1)
 				)
 			)
@@ -3378,16 +3531,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 242.57 99.06 0)
+		(at 44.45 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "16cf8db8-b5ec-4840-b650-27b6948cf8f6")
+		(uuid "19594233-bc44-443f-b3db-c25bd5b2028c")
 		(property "Reference" "#PWR010"
-			(at 242.57 105.41 0)
+			(at 44.45 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3396,7 +3549,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 242.57 104.14 0)
+			(at 44.45 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3404,7 +3557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 242.57 99.06 0)
+			(at 44.45 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3413,7 +3566,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 242.57 99.06 0)
+			(at 44.45 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3422,7 +3575,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 242.57 99.06 0)
+			(at 44.45 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3431,7 +3584,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "375969f5-4174-4599-9d96-215b977290d7")
+			(uuid "8f3fe008-022d-4bae-8c4e-fd15399fe400")
 		)
 		(instances
 			(project ""
@@ -3443,156 +3596,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 20.32 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a068b75-a030-4b5a-85fe-2ddc5f10433f")
-		(property "Reference" "C4"
-			(at 24.13 30.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C"
-			(at 24.13 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 21.2852 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 20.32 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 20.32 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8427baf9-958e-49e7-aedb-b12d5ef922eb")
-		)
-		(pin "2"
-			(uuid "0d417b35-f106-4a40-9587-f6c6524f6245")
-		)
-		(instances
-			(project ""
-				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Bridged")
-		(at 153.67 182.88 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2ba8fc26-a8d5-4f48-b259-0e68259415f8")
-		(property "Reference" "JP2"
-			(at 153.67 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_2_Bridged"
-			(at 153.67 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "test_footprint_library:jumper20"
-			(at 153.67 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, closed/bridged"
-			(at 153.67 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ba771faf-1b14-4d6c-a97a-fdd27a8132d4")
-		)
-		(pin "1"
-			(uuid "c4ff628c-3942-4a34-ae4e-3a709b44e3d1")
-		)
-		(instances
-			(project "test"
-				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 177.8 33.02 0)
+		(at 247.65 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "30cc9170-6e9f-4aa2-b386-83f791956011")
-		(property "Reference" "#PWR06"
-			(at 177.8 39.37 0)
+		(uuid "1df0008c-d697-495a-9e6b-9f72a76bf17e")
+		(property "Reference" "#PWR05"
+			(at 247.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3601,7 +3615,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 177.8 38.1 0)
+			(at 247.65 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3609,7 +3623,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 33.02 0)
+			(at 247.65 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3618,7 +3632,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 33.02 0)
+			(at 247.65 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3627,7 +3641,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 33.02 0)
+			(at 247.65 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3636,273 +3650,212 @@
 			)
 		)
 		(pin "1"
-			(uuid "d964f37d-8594-4673-bbc1-a2749050e117")
+			(uuid "2bd0f338-6021-47e2-8ee3-74e51b3f204e")
+		)
+		(instances
+			(project ""
+				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 162.56 31.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23d5cf11-27e9-49c1-b98f-3c9c40810d4f")
+		(property "Reference" "R5"
+			(at 162.56 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 162.56 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 162.56 29.972 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 162.56 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5069fa82-62cf-4bdf-847a-da1d688e0dd8")
+		)
+		(pin "2"
+			(uuid "bf6b84ec-ab94-4541-ae7e-3471748a2d4e")
+		)
+		(instances
+			(project "test"
+				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 241.3 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "356ed535-fc97-4aea-bb2a-1d36241eac7c")
+		(property "Reference" "#PWR025"
+			(at 241.3 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 241.3 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 241.3 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77f4fa98-5348-458a-9351-045b96b7b461")
+		)
+		(instances
+			(project "test"
+				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 179.07 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b4d6b3e-7ab7-488c-9555-f101b7b6b14c")
+		(property "Reference" "#PWR06"
+			(at 179.07 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00fb2e50-b7df-4ab1-a00e-39130bce587a")
 		)
 		(instances
 			(project ""
 				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 248.92 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a70a3ee-f164-4c63-a846-8aee70c0765f")
-		(property "Reference" "C2"
-			(at 252.73 86.7409 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_Polarized"
-			(at 252.73 89.2809 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
-			(at 249.8852 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 248.92 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 248.92 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c92434c-84c6-45b3-a453-c1d8189d0ac3")
-		)
-		(pin "2"
-			(uuid "37014878-49e5-428f-9db2-21d23ef8f311")
-		)
-		(instances
-			(project ""
-				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "test_library:ST0147-00-011-A")
-		(at 236.22 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3f1ee61e-b9a2-46cb-a8a3-14b09cc0f12f")
-		(property "Reference" "ANT4"
-			(at 255.27 30.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ST0147-00-011-A"
-			(at 255.27 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "ANTC3016X55N"
-			(at 255.27 125.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf"
-			(at 255.27 225.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm"
-			(at 238.506 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.55"
-			(at 255.27 425.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 255.27 525.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 255.27 625.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Amphenol RF"
-			(at 255.27 725.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "ST0147-00-011-A"
-			(at 255.27 825.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0b775710-64dc-4287-a644-d960939a3bd8")
-		)
-		(pin "1"
-			(uuid "915361f6-84ac-4414-889b-4132699651dc")
-		)
-		(instances
-			(project "test"
-				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "ANT4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Bridged")
-		(at 149.86 185.42 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "55b92a19-e690-4271-812d-e3ca83149ec4")
-		(property "Reference" "JP1"
-			(at 149.86 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_2_Bridged"
-			(at 149.86 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "test_footprint_library:jumper20"
-			(at 149.86 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, closed/bridged"
-			(at 149.86 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "819a5331-4450-4f27-a9a9-95e08b897e8d")
-		)
-		(pin "1"
-			(uuid "f18877dd-10b4-4d1a-8442-4ba3391ad131")
-		)
-		(instances
-			(project ""
-				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -3969,6 +3922,129 @@
 			(project ""
 				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "ST0147-00-011-A_3")
+		(lib_id "test_library:ST0147-00-011-A")
+		(at 179.07 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67d6d83d-7292-4c86-b861-01f7849c174d")
+		(property "Reference" "ANT3"
+			(at 198.12 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ST0147-00-011-A"
+			(at 198.12 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ANTC3016X55N"
+			(at 198.12 126.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf"
+			(at 198.12 226.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm"
+			(at 181.356 26.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.55"
+			(at 198.12 426.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 198.12 526.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 198.12 626.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol RF"
+			(at 198.12 726.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ST0147-00-011-A"
+			(at 198.12 826.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ad54f0c5-6f55-4b36-a605-f1fd4705de24")
+		)
+		(pin "1"
+			(uuid "ed6313e0-c4f3-4b27-bbc4-ebdd70d99b85")
+		)
+		(instances
+			(project "test"
+				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
+					(reference "ANT3")
 					(unit 1)
 				)
 			)
@@ -4451,7 +4527,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 41.91 34.29 0)
+		(at 38.1 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4460,7 +4536,7 @@
 		(fields_autoplaced yes)
 		(uuid "99a220a4-6796-4948-850b-36fdce4f0dfd")
 		(property "Reference" "#PWR04"
-			(at 41.91 40.64 0)
+			(at 38.1 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4469,7 +4545,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 41.91 39.37 0)
+			(at 38.1 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4477,7 +4553,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 34.29 0)
+			(at 38.1 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4486,7 +4562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 34.29 0)
+			(at 38.1 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4495,7 +4571,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 41.91 34.29 0)
+			(at 38.1 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,17 +4592,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 173.99 177.8 0)
+		(lib_id "power:GND")
+		(at 110.49 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a6904023-d9a5-4ab0-9f36-e44daf58f1f9")
-		(property "Reference" "#PWR01"
-			(at 173.99 181.61 0)
+		(uuid "a414773b-4db6-408a-be52-3456012b3268")
+		(property "Reference" "#PWR09"
+			(at 110.49 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4534,8 +4610,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 173.99 172.72 0)
+		(property "Value" "GND"
+			(at 110.49 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4543,7 +4619,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 177.8 0)
+			(at 110.49 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4552,7 +4628,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 177.8 0)
+			(at 110.49 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16523bc5-0f08-4bac-90fd-322b53e39ac3")
+		)
+		(instances
+			(project ""
+				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 162.56 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6904023-d9a5-4ab0-9f36-e44daf58f1f9")
+		(property "Reference" "#PWR01"
+			(at 162.56 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 162.56 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4561,7 +4703,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 173.99 177.8 0)
+			(at 162.56 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4898,17 +5040,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 130.81 33.02 0)
+		(lib_id "Device:R")
+		(at 27.94 27.94 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bb5957cc-abb8-44de-9dcc-b4169bb6ab39")
-		(property "Reference" "#PWR05"
-			(at 130.81 39.37 0)
+		(uuid "bb532827-e24c-47b6-b110-a4d5651b41f1")
+		(property "Reference" "R3"
+			(at 27.94 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 27.94 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 27.94 26.162 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4916,16 +5074,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 130.81 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 33.02 0)
+		(property "Datasheet" "~"
+			(at 27.94 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4933,17 +5083,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 130.81 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 33.02 0)
+		(property "Description" "Resistor"
+			(at 27.94 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4952,20 +5093,92 @@
 			)
 		)
 		(pin "1"
-			(uuid "6a430391-58f2-4b75-ad97-0c078eda2c81")
+			(uuid "4d5e431e-8282-4a00-b969-429c40c5d822")
+		)
+		(pin "2"
+			(uuid "703228a5-f43f-47a0-8885-ded6a1ecef48")
 		)
 		(instances
 			(project ""
 				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "#PWR05")
+					(reference "R3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 93.98 30.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3060010-1ecf-4803-b530-afb2e9b37bc8")
+		(property "Reference" "R4"
+			(at 93.98 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 93.98 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 93.98 28.702 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 93.98 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "185e92db-aada-4092-bc07-6054dcd8246c")
+		)
+		(pin "2"
+			(uuid "9c1e2425-36aa-4578-b736-7e3fa5ba045a")
+		)
+		(instances
+			(project "test"
+				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "ST0147-00-011-A_1")
 		(lib_id "test_library:ST0147-00-011-A")
-		(at 41.91 27.94 0)
+		(at 44.45 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4974,7 +5187,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3d17daf-4a00-48ae-936d-df1183d727e2")
 		(property "Reference" "ANT1"
-			(at 60.96 27.9399 0)
+			(at 63.5 27.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4983,7 +5196,7 @@
 			)
 		)
 		(property "Value" "ST0147-00-011-A"
-			(at 60.96 30.4799 0)
+			(at 63.5 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4992,7 +5205,7 @@
 			)
 		)
 		(property "Footprint" "ANTC3016X55N"
-			(at 60.96 122.86 0)
+			(at 63.5 122.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5002,7 +5215,7 @@
 			)
 		)
 		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf"
-			(at 60.96 222.86 0)
+			(at 63.5 222.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5012,7 +5225,7 @@
 			)
 		)
 		(property "Description" "RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm"
-			(at 44.196 22.606 0)
+			(at 46.736 22.606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5021,7 +5234,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 60.96 422.86 0)
+			(at 63.5 422.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5031,7 +5244,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 60.96 522.86 0)
+			(at 63.5 522.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5041,7 +5254,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 60.96 622.86 0)
+			(at 63.5 622.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5051,7 +5264,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amphenol RF"
-			(at 60.96 722.86 0)
+			(at 63.5 722.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5061,7 +5274,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ST0147-00-011-A"
-			(at 60.96 822.86 0)
+			(at 63.5 822.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5087,7 +5300,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 170.18 180.34 0)
+		(at 170.18 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5096,7 +5309,7 @@
 		(fields_autoplaced yes)
 		(uuid "c85714b2-eb20-4307-ab90-38eba2e96205")
 		(property "Reference" "#PWR08"
-			(at 170.18 186.69 0)
+			(at 170.18 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5105,7 +5318,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.18 185.42 0)
+			(at 170.18 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5113,7 +5326,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 170.18 180.34 0)
+			(at 170.18 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5122,7 +5335,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 180.34 0)
+			(at 170.18 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5131,7 +5344,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 180.34 0)
+			(at 170.18 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5179,7 +5392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm"
 			(at 257.5052 142.24 0)
 			(effects
 				(font
@@ -5440,17 +5653,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 236.22 88.9 0)
+		(lib_id "test_library:ST0147-00-011-A")
+		(at 247.65 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d54bcca2-35e5-4e2d-8a79-c212a41ffbc2")
-		(property "Reference" "C1"
-			(at 240.03 87.6299 0)
+		(uuid "d6b0eefc-ac97-4054-8629-4f4f82c17512")
+		(property "Reference" "ANT4"
+			(at 266.7 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5458,8 +5671,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
-			(at 240.03 90.1699 0)
+		(property "Value" "ST0147-00-011-A"
+			(at 266.7 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5467,8 +5680,28 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
-			(at 237.1852 92.71 0)
+		(property "Footprint" "ANTC3016X55N"
+			(at 266.7 129.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf"
+			(at 266.7 229.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm"
+			(at 249.936 28.956 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5476,8 +5709,83 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 236.22 88.9 0)
+		(property "Height" "0.55"
+			(at 266.7 429.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 266.7 529.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 266.7 629.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol RF"
+			(at 266.7 729.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ST0147-00-011-A"
+			(at 266.7 829.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "138439c4-4514-4837-9d16-bff56f1c57be")
+		)
+		(pin "1"
+			(uuid "e8f3d4bf-d838-42b1-8f54-28e6022d5b3f")
+		)
+		(instances
+			(project "test"
+				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
+					(reference "ANT4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 172.72 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e01576b1-1da5-4d7d-9783-702c29a38e5b")
+		(property "Reference" "#PWR022"
+			(at 172.72 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5485,8 +5793,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 236.22 88.9 0)
+		(property "Value" "GND"
+			(at 172.72 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5495,15 +5829,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1f1b1ecc-d9b0-4d6a-a374-8f36b2c325d1")
-		)
-		(pin "2"
-			(uuid "66a7c1ae-b7fc-4c62-b936-f7acd9fb845d")
+			(uuid "45762f5e-dd3c-489b-ab57-59e18afad0a6")
 		)
 		(instances
-			(project ""
+			(project "test"
 				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "C1")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -5642,72 +5973,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 236.22 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e3c39482-4b9c-4149-b78c-0d79e1952235")
-		(property "Reference" "#PWR017"
-			(at 236.22 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 236.22 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 236.22 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 236.22 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 236.22 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e68d0b09-0157-48be-8c67-dfe9af10e9f9")
-		)
-		(instances
-			(project "test"
-				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 220.98 127 0)
 		(unit 1)
@@ -5778,55 +6043,17 @@
 		)
 	)
 	(symbol
-		(lib_id "test_library:ST0147-00-011-A")
-		(at 130.81 30.48 0)
+		(lib_id "power:GND")
+		(at 104.14 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ef56d3f8-7a39-45ac-8849-dba7a749b203")
-		(property "Reference" "ANT2"
-			(at 149.86 30.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ST0147-00-011-A"
-			(at 149.86 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "ANTC3016X55N"
-			(at 149.86 125.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://s3-us-west-2.amazonaws.com/catsy.582/ST0147-00-011-A+BT+WiFi+2.4G+Datasheet-RB00.pdf"
-			(at 149.86 225.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Antenna Chip PCB Surface Mount Single Band 2W 50 Ohm"
-			(at 133.096 25.146 0)
+		(uuid "ef3dbcc4-5d07-4ea1-951e-03b8954a7327")
+		(property "Reference" "#PWR017"
+			(at 104.14 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5834,92 +6061,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "0.55"
-			(at 149.86 425.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 149.86 525.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 149.86 625.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Amphenol RF"
-			(at 149.86 725.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "ST0147-00-011-A"
-			(at 149.86 825.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "04ff42be-abcf-41f2-996b-93e9ca4d44fb")
-		)
-		(pin "1"
-			(uuid "a619e727-7de9-4142-a880-b1341b99e586")
-		)
-		(instances
-			(project "test"
-				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "ANT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 242.57 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f2b85f63-2f53-456a-9228-938f4d85e65c")
-		(property "Reference" "#PWR09"
-			(at 242.57 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 242.57 76.2 0)
+		(property "Value" "GND"
+			(at 104.14 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5927,7 +6070,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 242.57 81.28 0)
+			(at 104.14 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5936,7 +6079,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 242.57 81.28 0)
+			(at 104.14 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5944,8 +6087,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 242.57 81.28 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5954,12 +6097,80 @@
 			)
 		)
 		(pin "1"
-			(uuid "7c316f5a-191b-4a90-98bb-5f9e24450d7f")
+			(uuid "6ab4df0b-5cf3-4fb6-a5aa-54f7916dd255")
 		)
 		(instances
-			(project ""
+			(project "test"
 				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
-					(reference "#PWR09")
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 231.14 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f02bb572-1d2f-4fc0-b251-91c34dfe4e0f")
+		(property "Reference" "R6"
+			(at 231.14 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 231.14 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 231.14 32.512 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 231.14 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2387dec-3753-4daf-af71-637cb9b5f3ef")
+		)
+		(pin "2"
+			(uuid "1c383498-ff69-4cac-825f-be9082b74095")
+		)
+		(instances
+			(project "test"
+				(path "/bb1015a8-5dcf-444f-b1dc-3665f721c6b4"
+					(reference "R6")
 					(unit 1)
 				)
 			)
