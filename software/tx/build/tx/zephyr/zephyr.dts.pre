@@ -986,7 +986,13 @@
   mcuboot-led0 = &led0;
   watchdog0 = &wdt0;
  };
+
+ zephyr,user {
+  out0-gpios = <&gpio0 17 0>;
+  out1-gpios = <&gpio0 19 0>;
+ };
 };
+
 
 &reg1 {
  regulator-initial-mode = <1>;
