@@ -1134,7 +1134,7 @@ zephyr_udc0: &usbd {
 
 
 
- dfe-pdu-antenna = <0x0>;
+ dfe-pdu-antenna = <0x1>;
 
 
 

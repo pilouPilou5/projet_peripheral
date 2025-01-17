@@ -189,6 +189,9 @@ static float theta_est(struct bt_df_per_adv_sync_iq_samples_report const *report
 		
 		sum += tab_theta_est[i] ; 
 	}
+	for (int i =0 ;i <NB_ANT-1; i++ ){
+		printf("delta %d = %f\n",i,tab_dlt_phase[i]);
+	}
 	theta_mean = sum/(float)(NB_ANT-1);
 	
 	return(theta_mean);
@@ -209,7 +212,7 @@ static void cte_recv_cb(struct bt_le_per_adv_sync *sync,
     if (report->sample_type == BT_DF_IQ_SAMPLE_8_BITS_INT) {
 		float theta;
 		theta = theta_est(report);
-		printf("theta moyen = %f\n\n",theta);
+		printf("theta moyen = %f\n\n",theta*180/pi);
 
 
     } else if (report->sample_type == BT_DF_IQ_SAMPLE_16_BITS_INT) {

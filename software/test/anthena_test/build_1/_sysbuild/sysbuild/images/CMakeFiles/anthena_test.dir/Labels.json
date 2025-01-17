@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/CMakeFiles/anthena_test"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/CMakeFiles/anthena_test.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/CMakeFiles/anthena_test-complete.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-build.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-configure.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-download.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-install.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-patch.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"anthena_test"
+		],
+		"name" : "anthena_test"
+	}
+}
