@@ -27,6 +27,7 @@ float pi = M_PI ;
 float lbd = c/(float)f ;
 float  d ;
 
+float theta;
 /* The Bluetooth Core specification allows controller to wait 6
  * periodic advertising events for
  * synchronization establishment, hence timeout must be longer than that.
@@ -191,7 +192,7 @@ static float theta_est(struct bt_df_per_adv_sync_iq_samples_report const *report
 		int8_t Q = report->sample[i].q;
 		float phase = atan2(Q,I);
 		tab_phase[i-8]  = phase;
-		//printf("Sample %d: Phase = %.6f\n", i-8,phase);
+		printf("Sample %d: Phase = %.6f\n", i-8,phase);
 		
 	}
 	for(int i = 0 ; i<NB_ANT; i++){
@@ -216,7 +217,7 @@ static float theta_est(struct bt_df_per_adv_sync_iq_samples_report const *report
 		
 		tab_theta_est[i] = asinf((lbd*tab_dlt_phase[i])/(2*pi*d));
 
-		printf("delta phase %d = %f \n",i, tab_dlt_phase[i]);
+		//printf("delta phase %d = %f \n",i, tab_dlt_phase[i]);
 		//printf("int arcsin = %f\n",(lbd*tab_dlt_phase[i])/(2*pi*d));
 		//printf("diff %d  = %f\n",i+1,tab_dlt_phase[i]) ;
 		//printf("theta estime %d  = %f\n",i,tab_theta_est[i]) ;
@@ -244,7 +245,7 @@ static void cte_recv_cb(struct bt_le_per_adv_sync *sync,
 
     // Vérification du type d'échantillons
     if (report->sample_type == BT_DF_IQ_SAMPLE_8_BITS_INT) {
-		float theta;
+		
 		theta = theta_est(report);
 		printf("theta moyen = %f\n\n",theta*180/pi);
 
