@@ -1,13 +1,13 @@
 # Target labels
  tx
 # Source files and their labels
-C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx
-C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx.rule
-C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx-complete.rule
-C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-build.rule
-C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-configure.rule
-C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-download.rule
-C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-install.rule
-C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-mkdir.rule
-C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-patch.rule
-C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-update.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/CMakeFiles/tx-complete.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-build.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-configure.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-download.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-install.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-mkdir.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-patch.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/_sysbuild/sysbuild/images/tx-prefix/src/tx-stamp/tx-update.rule

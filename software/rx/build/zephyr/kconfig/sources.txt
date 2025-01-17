@@ -1,9 +1,9 @@
-C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\projet_peripheral\software\rx\Kconfig.sysbuild
-C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\projet_peripheral\software\rx\build\Kconfig\Kconfig.sysbuild.modules
-C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\projet_peripheral\software\rx\build\Kconfig\boards\Kconfig.nrf52833dk
-C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\projet_peripheral\software\rx\build\Kconfig\boards\Kconfig.sysbuild
-C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\projet_peripheral\software\rx\build\Kconfig\soc\Kconfig.soc
-C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\projet_peripheral\software\rx\build\Kconfig\soc\Kconfig.sysbuild
+C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\software\rx\Kconfig.sysbuild
+C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\software\rx\build\Kconfig\Kconfig.sysbuild.modules
+C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\software\rx\build\Kconfig\boards\Kconfig.nrf52833dk
+C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\software\rx\build\Kconfig\boards\Kconfig.sysbuild
+C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\software\rx\build\Kconfig\soc\Kconfig.soc
+C:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\software\rx\build\Kconfig\soc\Kconfig.sysbuild
 C:\ncs\v2.9.0\nrf\sysbuild\Kconfig.appcore
 C:\ncs\v2.9.0\nrf\sysbuild\Kconfig.approtect
 C:\ncs\v2.9.0\nrf\sysbuild\Kconfig.bt_fast_pair

@@ -39,46 +39,46 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/tx/zephyr/lib/crc/cmake_install.cmake")
+  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/lib/crc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/tx/zephyr/lib/libc/cmake_install.cmake")
+  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/lib/libc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/tx/zephyr/lib/posix/cmake_install.cmake")
+  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/lib/posix/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/tx/zephyr/lib/hash/cmake_install.cmake")
+  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/lib/hash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/tx/zephyr/lib/heap/cmake_install.cmake")
+  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/lib/heap/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/tx/zephyr/lib/mem_blocks/cmake_install.cmake")
+  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/lib/mem_blocks/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/tx/zephyr/lib/net_buf/cmake_install.cmake")
+  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/lib/net_buf/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/tx/zephyr/lib/os/cmake_install.cmake")
+  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/lib/os/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/tx/zephyr/lib/utils/cmake_install.cmake")
+  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/lib/utils/cmake_install.cmake")
 endif()
 

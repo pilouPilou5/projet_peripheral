@@ -1,0 +1,7 @@
+default: anthena_test
+build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1
+domains:
+  - name: anthena_test
+    build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/anthena_test
+flash_order:
+  - anthena_test
