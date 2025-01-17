@@ -39,76 +39,76 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/disk/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/disk/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/firmware/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/firmware/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/interrupt_controller/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/interrupt_controller/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/misc/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/misc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/pcie/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/pcie/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/usb/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/usb/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/usb_c/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/usb_c/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/bluetooth/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/bluetooth/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/clock_control/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/clock_control/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/console/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/console/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/entropy/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/entropy/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/gpio/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/gpio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/pinctrl/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/pinctrl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/serial/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/serial/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/drivers/timer/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/drivers/timer/cmake_install.cmake")
 endif()
 

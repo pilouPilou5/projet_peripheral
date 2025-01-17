@@ -14,6 +14,7 @@
 #include <zephyr/bluetooth/bluetooth.h>
 #include <zephyr/bluetooth/direction.h>
 #include <stdio.h>
+#include <math.h>
 
 #define DEVICE_NAME CONFIG_BT_DEVICE_NAME
 #define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)
@@ -160,6 +161,30 @@ static float theta_est(struct bt_df_per_adv_sync_iq_samples_report const *report
 	float tab_dlt_phase[NB_ANT-1]; // tableau de diférence de phase 
 	float tab_theta_est[NB_ANT-1]; // tableau des estimation de theta
 	
+	float tab_sync[8];
+	for (int i=0; i<8; i++){
+		int8_t I = report->sample[i].i; 
+		int8_t Q = report->sample[i].q;
+		float phase = atan2f((float)Q,(float)I);
+		tab_sync[i]  = phase;
+		//printf("sync %d: Phase = %.6f\n", i,phase);
+	}
+
+	float sync = 0, dlt_sync;
+	for (int i=0; i<7; i++){
+		dlt_sync = tab_sync[i+1] - tab_sync[i];
+		//printf("dlt_sync av magouille : %f  ", dlt_sync);
+		if(dlt_sync > 2*pi){
+			dlt_sync -= 2*pi;
+		}
+		if(dlt_sync < 0){
+			dlt_sync += 2*pi;
+		}
+		//printf("dlt_sync ap magouille : %f\n", dlt_sync);
+		sync += dlt_sync;
+	}
+	sync /= 7;
+	//printf("sync = %f\n", sync);
 
 	for (int i =8 ;i <nb_phase+8; i++ ){
 		int8_t I = report->sample[i].i; 
@@ -178,20 +203,29 @@ static float theta_est(struct bt_df_per_adv_sync_iq_samples_report const *report
 	}
 	//printf("lambda : %f		d : %f\n", lbd, d);
 	float sum = 0;
+	float dlt_phase;
 	for (int i =0 ;i <NB_ANT-1; i++ ){
-		tab_dlt_phase[i] = tab_phase [i+1]  - tab_phase [i];
+		dlt_phase = tab_phase [i+1] - tab_phase [i];// - 4*sync;
+		if(dlt_phase > pi){
+			dlt_phase -= 2*pi;
+		}
+		if(dlt_phase < -pi){
+			dlt_phase += 2*pi;
+		}
+		tab_dlt_phase[i] = dlt_phase;
+		
 		tab_theta_est[i] = asinf((lbd*tab_dlt_phase[i])/(2*pi*d));
 
-		//printf("num = %f \n",lbd*tab_dlt_phase[i]);
+		printf("delta phase %d = %f \n",i, tab_dlt_phase[i]);
 		//printf("int arcsin = %f\n",(lbd*tab_dlt_phase[i])/(2*pi*d));
 		//printf("diff %d  = %f\n",i+1,tab_dlt_phase[i]) ;
 		//printf("theta estime %d  = %f\n",i,tab_theta_est[i]) ;
 		
 		sum += tab_theta_est[i] ; 
 	}
-	for (int i =0 ;i <NB_ANT-1; i++ ){
+	/*for (int i =0 ;i <NB_ANT-1; i++ ){
 		printf("delta %d = %f\n",i,tab_dlt_phase[i]);
-	}
+	}*/
 	theta_mean = sum/(float)(NB_ANT-1);
 	
 	return(theta_mean);
