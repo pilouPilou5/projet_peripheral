@@ -552,3 +552,7 @@
 837	1409	7588335304216733	C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/zephyr.hex	4795bcbf2c84cf07
 837	1409	7588335304216733	C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/zephyr.bin	4795bcbf2c84cf07
 837	1409	7588335304216733	C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/zephyr.stat	4795bcbf2c84cf07
+32	93	7592661709022005	zephyr/include/generated/ncs_commit.h	ec7d5911568cd962
+32	93	7592661709022005	C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/include/generated/ncs_commit.h	ec7d5911568cd962
+38	98	7592661719586414	zephyr/include/generated/zephyr_commit.h	48407a5921fd3a74
+38	98	7592661719586414	C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/include/generated/zephyr_commit.h	48407a5921fd3a74
