@@ -162,7 +162,7 @@ static float theta_est(struct bt_df_per_adv_sync_iq_samples_report const *report
 	float tab_dlt_phase[nb_phase-1]; // tableau de diférence de phase 
 	float tab_theta_est[NB_ANT-1]; // tableau des estimation de theta
 
-	printf("nb_phase = %d\n", (nb_phase-1)/4);
+	//printf("nb_phase = %d\n", (nb_phase-1)/4);
 	
 	float tab_sync[8];
 	for (int i=0; i<8; i++){
@@ -219,13 +219,40 @@ static float theta_est(struct bt_df_per_adv_sync_iq_samples_report const *report
 		
 		//sum += dlt_phase; 
 	}
+	///////////delta phase matrix
+	/*float avg;
+	int div;
+	for (int i =0 ;i <4; i++ ){
+		for (int j =0 ;j <4; j++ ){
+			avg = 0;
+			div = 0;
+			for (int k =0 ;k <nb_phase-3; k+=4 ){
+				dlt_phase = tab_phase [k+j] - tab_phase [k+i];
+				if(dlt_phase > pi){
+					dlt_phase -= 2*pi;
+				}
+				if(dlt_phase < -pi){
+					dlt_phase += 2*pi;
+				}
+				avg+=fabsf(dlt_phase);
+				avg += dlt_phase;
+				div++;
+				
+			}
+			//printf("%d ", div);
+			printf("%5.2f ", avg/div);
+		}
+		printf("\n");
+	}*/
+
 	float sum = 0;
+	int div = 0;
 	for (int i=0; i<nb_phase-1; i++){
-		printf("i = %d", i);
 		sum+=tab_dlt_phase[i];
+		div++;
 	}
 	
-	float dlt_mean = sum/(nb_phase-1);
+	float dlt_mean = sum/(div);
 	printf("dlt_mean = %f\n", dlt_mean);
 	theta_mean = asinf((lbd*dlt_mean)/(2*pi*d));
 	return(theta_mean);

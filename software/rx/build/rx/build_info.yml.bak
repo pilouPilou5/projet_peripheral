@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: C:/Users/paulj/Documents/projet_peripheral/software/rx
+    source-dir: C:/Users/paulj/Documents/projet_peripheral/software/rx
+  board:
+    name: nrf52833dk
+    qualifiers: nrf52833
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - C:/ncs/v2.9.0/nrf/dts/bindings
+     - C:/ncs/v2.9.0/zephyr/dts/bindings
+    extra-user-files:
+     - C:/ncs/v2.9.0/zephyr/snippets/bt-ll-sw-split/bt-ll-sw-split.overlay
+    files:
+     - C:/ncs/v2.9.0/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833.dts
+     - C:/Users/paulj/Documents/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.overlay
+     - C:/ncs/v2.9.0/zephyr/snippets/bt-ll-sw-split/bt-ll-sw-split.overlay
+    include-dirs:
+     - C:/ncs/v2.9.0/nrf/include
+     - C:/ncs/v2.9.0/nrf/dts
+     - C:/ncs/v2.9.0/zephyr/include
+     - C:/ncs/v2.9.0/zephyr/include/zephyr
+     - C:/ncs/v2.9.0/zephyr/dts/common
+     - C:/ncs/v2.9.0/zephyr/dts/x86
+     - C:/ncs/v2.9.0/zephyr/dts/xtensa
+     - C:/ncs/v2.9.0/zephyr/dts/sparc
+     - C:/ncs/v2.9.0/zephyr/dts/riscv
+     - C:/ncs/v2.9.0/zephyr/dts/posix
+     - C:/ncs/v2.9.0/zephyr/dts/nios2
+     - C:/ncs/v2.9.0/zephyr/dts/arm64
+     - C:/ncs/v2.9.0/zephyr/dts/arm
+     - C:/ncs/v2.9.0/zephyr/dts/arc
+     - C:/ncs/v2.9.0/zephyr/dts
+    user-files:
+     - C:/Users/paulj/Documents/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.overlay
+  kconfig:
+    extra-user-files:
+     - C:/ncs/v2.9.0/zephyr/snippets/bt-ll-sw-split/bt-ll-sw-split.conf
+    files:
+     - C:/ncs/v2.9.0/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833_defconfig
+     - C:/Users/paulj/Documents/projet_peripheral/software/rx/prj.conf
+     - C:/Users/paulj/Documents/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.conf
+     - C:/ncs/v2.9.0/zephyr/snippets/bt-ll-sw-split/bt-ll-sw-split.conf
+     - C:/Users/paulj/Documents/projet_peripheral/software/rx/build/rx/zephyr/.config.sysbuild
+    user-files:
+     - C:/Users/paulj/Documents/projet_peripheral/software/rx/prj.conf
+     - C:/Users/paulj/Documents/projet_peripheral/software/rx/boards/nrf52833dk_nrf52833.conf
+  toolchain:
+    name: zephyr
+    path: C:/ncs/toolchains/b620d30767/opt/zephyr-sdk
+  vendor-specific:
+    nordic:
+      svdfile: C:/ncs/v2.9.0/modules/hal/nordic/nrfx/mdk/nrf52833.svd
+  zephyr:
+    version: 3.7.99
+    zephyr-base: C:/ncs/v2.9.0/zephyr
+version: 0.1.0

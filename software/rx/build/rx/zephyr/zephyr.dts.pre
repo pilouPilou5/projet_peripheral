@@ -1158,6 +1158,11 @@ zephyr_udc0: &usbd {
  chosen {
   zephyr,bt-hci = &bt_hci_controller;
  };
+
+ zephyr,user {
+  /delete-property/ out0-gpios;
+  /delete-property/ out1-gpios;
+ };
 };
 # 0 "<command-line>" 2
 # 1 "C:/ncs/v2.9.0/zephyr/misc/empty_file.c"
