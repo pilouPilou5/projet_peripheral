@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/_sysbuild/sysbuild/images/CMakeFiles/button"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/_sysbuild/sysbuild/images/CMakeFiles/button.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/_sysbuild/sysbuild/images/CMakeFiles/button-complete.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/_sysbuild/sysbuild/images/button-prefix/src/button-stamp/button-build.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/_sysbuild/sysbuild/images/button-prefix/src/button-stamp/button-configure.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/_sysbuild/sysbuild/images/button-prefix/src/button-stamp/button-download.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/_sysbuild/sysbuild/images/button-prefix/src/button-stamp/button-install.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/_sysbuild/sysbuild/images/button-prefix/src/button-stamp/button-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/_sysbuild/sysbuild/images/button-prefix/src/button-stamp/button-patch.rule"
+		},
+		{
+			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/_sysbuild/sysbuild/images/button-prefix/src/button-stamp/button-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"button"
+		],
+		"name" : "button"
+	}
+}

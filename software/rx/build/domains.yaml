@@ -1,7 +1,7 @@
 default: rx
-build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx/build
+build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build
 domains:
   - name: rx
-    build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/rx/build/rx
+    build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/rx
 flash_order:
   - rx

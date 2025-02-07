@@ -1,7 +1,7 @@
 default: tx
-build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build
+build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build
 domains:
   - name: tx
-    build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/projet_peripheral/software/tx/build/tx
+    build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx
 flash_order:
   - tx

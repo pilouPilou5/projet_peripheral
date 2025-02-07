@@ -1,0 +1,7 @@
+default: button
+build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1
+domains:
+  - name: button
+    build_dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/button/build_1/button
+flash_order:
+  - button

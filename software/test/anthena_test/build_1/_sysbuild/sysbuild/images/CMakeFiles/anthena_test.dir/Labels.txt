@@ -1,0 +1,13 @@
+# Target labels
+ anthena_test
+# Source files and their labels
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/CMakeFiles/anthena_test
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/CMakeFiles/anthena_test.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/CMakeFiles/anthena_test-complete.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-build.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-configure.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-download.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-install.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-mkdir.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-patch.rule
+C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/test/anthena_test/build_1/_sysbuild/sysbuild/images/anthena_test-prefix/src/anthena_test-stamp/anthena_test-update.rule

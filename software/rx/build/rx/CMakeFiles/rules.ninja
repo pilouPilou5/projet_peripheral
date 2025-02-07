@@ -52,7 +52,7 @@ rule C_COMPILER__zephyr_pre0_MinSizeRel
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__zephyr_pre0_MinSizeRel
-  command = cmd.exe /C "$PRE_LINK && C:\ncs\toolchains\b620d30767\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-gcc.exe $FLAGS $LINK_FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES -L"c:/ncs/toolchains/b620d30767/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp" -lc -lgcc && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && C:\ncs\toolchains\b620d30767\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-gcc.exe $FLAGS $LINK_FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES -L"c:/ncs/toolchains/b620d30767/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp" -lm -lc -lgcc -lc && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 
@@ -100,7 +100,7 @@ rule C_COMPILER__zephyr_final_MinSizeRel
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__zephyr_final_MinSizeRel
-  command = cmd.exe /C "$PRE_LINK && C:\ncs\toolchains\b620d30767\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-gcc.exe $FLAGS $LINK_FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES -L"c:/ncs/toolchains/b620d30767/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp" -lc -lgcc && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && C:\ncs\toolchains\b620d30767\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-gcc.exe $FLAGS $LINK_FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES -L"c:/ncs/toolchains/b620d30767/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/thumb/v7e-m/nofp" -lm -lc -lgcc -lc && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 
@@ -223,7 +223,7 @@ rule C_STATIC_LIBRARY_LINKER__arch__arm__core__mpu_MinSizeRel
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__lib__libc__picolibc_MinSizeRel
+rule C_COMPILER__lib__libc__newlib_MinSizeRel
   depfile = $DEP_FILE
   deps = gcc
   command = C:\ncs\toolchains\b620d30767\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -233,7 +233,7 @@ rule C_COMPILER__lib__libc__picolibc_MinSizeRel
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER__lib__libc__picolibc_MinSizeRel
+rule C_STATIC_LIBRARY_LINKER__lib__libc__newlib_MinSizeRel
   command = cmd.exe /C "$PRE_LINK && C:\ncs\toolchains\b620d30767\opt\bin\cmake.exe -E rm -f $TARGET_FILE && C:\ncs\toolchains\b620d30767\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\ncs\toolchains\b620d30767\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
@@ -642,7 +642,7 @@ rule C_STATIC_LIBRARY_LINKER__kernel_MinSizeRel
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\ncs\toolchains\b620d30767\opt\bin\cmake.exe --regenerate-during-build -SC:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\projet_peripheral\software\rx -BC:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\projet_peripheral\software\rx\build\rx
+  command = C:\ncs\toolchains\b620d30767\opt\bin\cmake.exe --regenerate-during-build -SC:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\software\rx -BC:\Users\antoi\OneDrive\Bureau\Projet\projet_indus\projet_peripheral\software\rx\build\rx
   description = Re-running CMake...
   generator = 1
 
