@@ -247,7 +247,7 @@ static float theta_est(struct bt_df_per_adv_sync_iq_samples_report const *report
 
 	float sum = 0;
 	int div = 0;
-	for (int i=0; i<nb_phase-1; i++){
+	for (int i=0; i<nb_phase-1; i+=4){
 		sum+=tab_dlt_phase[i];
 		div++;
 	}
