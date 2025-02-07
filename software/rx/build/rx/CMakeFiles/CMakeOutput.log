@@ -1,5 +1,5 @@
 The target system is: Generic - 3.7.99 - arm
-The host system is: Windows - 10.0.22631 - AMD64
+The host system is: Windows - 10.0.26100 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: C:/ncs/toolchains/b620d30767/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe 
 Build flags: 
@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
 
-The C compiler identification is GNU, found in "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/rx/CMakeFiles/3.21.0/CompilerIdC/CMakeCCompilerId.o"
+The C compiler identification is GNU, found in "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/rx/CMakeFiles/3.21.0/CompilerIdC/CMakeCCompilerId.o"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/ncs/toolchains/b620d30767/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe 
@@ -24,7 +24,7 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
 
-The CXX compiler identification is GNU, found in "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/rx/CMakeFiles/3.21.0/CompilerIdCXX/CMakeCXXCompilerId.o"
+The CXX compiler identification is GNU, found in "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/rx/CMakeFiles/3.21.0/CompilerIdCXX/CMakeCXXCompilerId.o"
 
 Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
 arm-zephyr-eabi-gcc.exe (Zephyr SDK 0.17.0) 12.2.0

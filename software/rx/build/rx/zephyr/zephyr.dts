@@ -121,7 +121,7 @@
 			ble-coded-phy-supported;
 			tx-high-power-supported;
 			dfe-antenna-num = < 0x4 >;
-			dfe-pdu-antenna = < 0x1 >;
+			dfe-pdu-antenna = < 0x2 >;
 			dfegpio0-gpios = < &gpio0 0x3 0x0 >;
 			dfegpio1-gpios = < &gpio0 0x4 0x0 >;
 			ieee802154: ieee802154 {
@@ -737,7 +737,5 @@
 		phandle = < 0x11 >;
 	};
 	zephyr,user {
-		out0-gpios = < &gpio0 0x11 0x0 >;
-		out1-gpios = < &gpio0 0x13 0x0 >;
 	};
 };

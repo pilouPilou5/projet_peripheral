@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/CMakeFiles/rx"
+			"file" : "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/CMakeFiles/rx"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/CMakeFiles/rx.rule"
+			"file" : "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/CMakeFiles/rx.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/CMakeFiles/rx-complete.rule"
+			"file" : "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/CMakeFiles/rx-complete.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-build.rule"
+			"file" : "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-build.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-configure.rule"
+			"file" : "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-configure.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-download.rule"
+			"file" : "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-download.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-install.rule"
+			"file" : "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-install.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-mkdir.rule"
+			"file" : "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-mkdir.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-patch.rule"
+			"file" : "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-patch.rule"
 		},
 		{
-			"file" : "C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-update.rule"
+			"file" : "C:/Users/paulj/Documents/projet_peripheral/software/rx/build/_sysbuild/sysbuild/images/rx-prefix/src/rx-stamp/rx-update.rule"
 		}
 	],
 	"target" : 

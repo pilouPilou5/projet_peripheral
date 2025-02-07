@@ -39,26 +39,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/lib/bin/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/lib/bin/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/lib/multithreading_lock/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/lib/multithreading_lock/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/lib/flash_patch/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/lib/flash_patch/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/lib/fatal_error/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/lib/fatal_error/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/lib/boot_banner/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/lib/boot_banner/cmake_install.cmake")
 endif()
 

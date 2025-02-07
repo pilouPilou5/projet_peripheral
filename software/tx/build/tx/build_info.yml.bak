@@ -1,7 +1,7 @@
 cmake:
   application:
-    configuration-dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx
-    source-dir: C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx
+    configuration-dir: C:/Users/paulj/Documents/projet_peripheral/software/tx
+    source-dir: C:/Users/paulj/Documents/projet_peripheral/software/tx
   board:
     name: nrf52833dk
     qualifiers: nrf52833
@@ -12,7 +12,7 @@ cmake:
      - C:/ncs/v2.9.0/zephyr/dts/bindings
     files:
      - C:/ncs/v2.9.0/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833.dts
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/boards/nrf52833dk_nrf52833.overlay
+     - C:/Users/paulj/Documents/projet_peripheral/software/tx/boards/nrf52833dk_nrf52833.overlay
     include-dirs:
      - C:/ncs/v2.9.0/nrf/include
      - C:/ncs/v2.9.0/nrf/dts
@@ -30,16 +30,16 @@ cmake:
      - C:/ncs/v2.9.0/zephyr/dts/arc
      - C:/ncs/v2.9.0/zephyr/dts
     user-files:
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/boards/nrf52833dk_nrf52833.overlay
+     - C:/Users/paulj/Documents/projet_peripheral/software/tx/boards/nrf52833dk_nrf52833.overlay
   kconfig:
     files:
      - C:/ncs/v2.9.0/zephyr/boards/nordic/nrf52833dk/nrf52833dk_nrf52833_defconfig
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/prj.conf
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/boards/nrf52833dk_nrf52833.conf
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/zephyr/.config.sysbuild
+     - C:/Users/paulj/Documents/projet_peripheral/software/tx/prj.conf
+     - C:/Users/paulj/Documents/projet_peripheral/software/tx/boards/nrf52833dk_nrf52833.conf
+     - C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/zephyr/.config.sysbuild
     user-files:
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/prj.conf
-     - C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/boards/nrf52833dk_nrf52833.conf
+     - C:/Users/paulj/Documents/projet_peripheral/software/tx/prj.conf
+     - C:/Users/paulj/Documents/projet_peripheral/software/tx/boards/nrf52833dk_nrf52833.conf
   toolchain:
     name: zephyr
     path: C:/ncs/toolchains/b620d30767/opt/zephyr-sdk
