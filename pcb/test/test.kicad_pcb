@@ -584,7 +584,7 @@
 			(pintype "input")
 			(uuid "5baee9e7-5578-4820-9aab-6ff0e4c552a7")
 		)
-		(model "ST0147-00-011-A.stp"
+		(model "C:/Users/paulj/Documents/projet_peripheral/pcb/components/ST0147-00-011-A/3D/ST0147-00-011-A.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -879,7 +879,7 @@
 			(pintype "input")
 			(uuid "d5a8daab-4878-4b5d-8194-9988340eaad0")
 		)
-		(model "ST0147-00-011-A.stp"
+		(model "C:/Users/paulj/Documents/projet_peripheral/pcb/components/ST0147-00-011-A/3D/ST0147-00-011-A.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3396,7 +3396,7 @@
 			(pintype "input")
 			(uuid "1fec5b49-e0e2-41cb-9b09-ad17e238aac7")
 		)
-		(model "ST0147-00-011-A.stp"
+		(model "C:/Users/paulj/Documents/projet_peripheral/pcb/components/ST0147-00-011-A/3D/ST0147-00-011-A.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4576,7 +4576,7 @@
 			(pintype "passive")
 			(uuid "ae7b22d3-0118-44ea-a149-a6ca45d42394")
 		)
-		(model "ADG904BRUZ-REEL7.stp"
+		(model "C:/Users/paulj/Documents/projet_peripheral/pcb/components/ADG904BRUZ-REEL7/3D/ADG904BRUZ-REEL7.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5258,7 +5258,7 @@
 			(solder_mask_margin 0.102)
 			(uuid "8c6d5243-1318-4334-94dd-48cf6c1a633f")
 		)
-		(model "C:/Users/paulj/Documents/projet_peripheral/components/CONSMA013.062-G/CONSMA013.062-G.step"
+		(model "C:/Users/paulj/Documents/projet_peripheral/pcb/components/CONSMA013.062-G/CONSMA013.062-G.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5553,7 +5553,7 @@
 			(pintype "input")
 			(uuid "97fbd111-aac0-41e1-98b7-212149bd5a4b")
 		)
-		(model "ST0147-00-011-A.stp"
+		(model "C:/Users/paulj/Documents/projet_peripheral/pcb/components/ST0147-00-011-A/3D/ST0147-00-011-A.stp"
 			(offset
 				(xyz 0 0 0)
 			)
