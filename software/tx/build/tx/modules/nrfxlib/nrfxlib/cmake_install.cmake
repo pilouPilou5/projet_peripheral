@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrfxlib/nrfxlib/softdevice_controller/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrfxlib/nrfxlib/softdevice_controller/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrfxlib/nrfxlib/mpsl/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrfxlib/nrfxlib/mpsl/cmake_install.cmake")
 endif()
 

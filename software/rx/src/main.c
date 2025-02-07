@@ -14,6 +14,7 @@
 #include <zephyr/bluetooth/bluetooth.h>
 #include <zephyr/bluetooth/direction.h>
 #include <stdio.h>
+#include <math.h>
 
 #define DEVICE_NAME CONFIG_BT_DEVICE_NAME
 #define DEVICE_NAME_LEN (sizeof(DEVICE_NAME) - 1)
@@ -26,6 +27,7 @@ float pi = M_PI ;
 float lbd = c/(float)f ;
 float  d ;
 
+float theta;
 /* The Bluetooth Core specification allows controller to wait 6
  * periodic advertising events for
  * synchronization establishment, hence timeout must be longer than that.
@@ -153,47 +155,106 @@ static void recv_cb(struct bt_le_per_adv_sync *sync,
 
 static float theta_est(struct bt_df_per_adv_sync_iq_samples_report const *report){
 	float theta_mean ;
-	int nb_phase  = (report->sample_count - 8); // les 8 premier echantillons sont des references 
+	int nb_phase  = (report->sample_count-8); // les 8 premier echantillons sont des references 
 	int nb_block = nb_phase%NB_ANT ; 
 	float tab_phase [nb_phase] ; //tableau de phase
 	float tab_mean_phase[NB_ANT]; // tableau des moyennes des phases par anthenne  
-	float tab_dlt_phase[NB_ANT-1]; // tableau de diférence de phase 
+	float tab_dlt_phase[nb_phase-1]; // tableau de diférence de phase 
 	float tab_theta_est[NB_ANT-1]; // tableau des estimation de theta
-	
 
-	for (int i =8 ;i <nb_phase+8; i++ ){
+	//printf("nb_phase = %d\n", (nb_phase-1)/4);
+	
+	float tab_sync[8];
+	for (int i=0; i<8; i++){
 		int8_t I = report->sample[i].i; 
 		int8_t Q = report->sample[i].q;
+		float phase = atan2f((float)Q,(float)I);
+		tab_sync[i]  = phase;
+		//printf("sync %d: Phase = %.6f\n", i,phase);
+	}
+
+	float sync = 0, dlt_sync;
+	for (int i=0; i<7; i++){
+		dlt_sync = tab_sync[i+1] - tab_sync[i];
+		//printf("dlt_sync av magouille : %f  ", dlt_sync);
+		if(dlt_sync > 2*pi){
+			dlt_sync -= 2*pi;
+		}
+		if(dlt_sync < 0){
+			dlt_sync += 2*pi;
+		}
+		//printf("dlt_sync ap magouille : %f\n", dlt_sync);
+		sync += dlt_sync;
+	}
+	sync /= 7;
+	//printf("sync = %f\n", sync);
+
+	for (int i =0 ;i <nb_phase; i++ ){
+		int8_t I = report->sample[i+8].i; 
+		int8_t Q = report->sample[i+8].q;
 		float phase = atan2(Q,I);
-		tab_phase[i-8]  = phase;
+		tab_phase[i]  = phase;
 		//printf("Sample %d: Phase = %.6f\n", i-8,phase);
 		
 	}
-	for(int i = 0 ; i<NB_ANT; i++){
-		float sum ;
-		for(int j = 0 ; j<nb_block;j++){
-			sum += tab_phase[i+4*j];
-		}
-		tab_mean_phase[i] = sum/nb_block ;
-	}
 	//printf("lambda : %f		d : %f\n", lbd, d);
-	float sum = 0;
-	for (int i =0 ;i <NB_ANT-1; i++ ){
-		tab_dlt_phase[i] = tab_phase [i+1]  - tab_phase [i];
-		tab_theta_est[i] = asinf((lbd*tab_dlt_phase[i])/(2*pi*d));
+	
+	float dlt_phase;
+	for (int i=0; i<nb_phase-1; i++){
+		dlt_phase = tab_phase [i+1] - tab_phase [i];// - 4*sync;
+		if(dlt_phase > pi){
+			dlt_phase -= 2*pi;
+		}
+		if(dlt_phase < -pi){
+			dlt_phase += 2*pi;
+		}
+		tab_dlt_phase[i] = dlt_phase;
+		
+		//tab_theta_est[i] = asinf((lbd*tab_dlt_phase[i])/(2*pi*d));
 
-		//printf("num = %f \n",lbd*tab_dlt_phase[i]);
+		printf("delta phase %d = %f \n",i, dlt_phase);
 		//printf("int arcsin = %f\n",(lbd*tab_dlt_phase[i])/(2*pi*d));
 		//printf("diff %d  = %f\n",i+1,tab_dlt_phase[i]) ;
 		//printf("theta estime %d  = %f\n",i,tab_theta_est[i]) ;
 		
-		sum += tab_theta_est[i] ; 
+		//sum += dlt_phase; 
 	}
-	for (int i =0 ;i <NB_ANT-1; i++ ){
-		printf("delta %d = %f\n",i,tab_dlt_phase[i]);
+	///////////delta phase matrix
+	/*float avg;
+	int div;
+	for (int i =0 ;i <4; i++ ){
+		for (int j =0 ;j <4; j++ ){
+			avg = 0;
+			div = 0;
+			for (int k =0 ;k <nb_phase-3; k+=4 ){
+				dlt_phase = tab_phase [k+j] - tab_phase [k+i];
+				if(dlt_phase > pi){
+					dlt_phase -= 2*pi;
+				}
+				if(dlt_phase < -pi){
+					dlt_phase += 2*pi;
+				}
+				avg+=fabsf(dlt_phase);
+				avg += dlt_phase;
+				div++;
+				
+			}
+			//printf("%d ", div);
+			printf("%5.2f ", avg/div);
+		}
+		printf("\n");
+	}*/
+
+	float sum = 0;
+	int div = 0;
+	for (int i=0; i<nb_phase-1; i+=4){
+		sum+=tab_dlt_phase[i];
+		div++;
 	}
-	theta_mean = sum/(float)(NB_ANT-1);
 	
+	float dlt_mean = sum/(div);
+	printf("dlt_mean = %f\n", dlt_mean);
+	theta_mean = asinf((lbd*dlt_mean)/(2*pi*d));
 	return(theta_mean);
 }
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -210,7 +271,7 @@ static void cte_recv_cb(struct bt_le_per_adv_sync *sync,
 
     // Vérification du type d'échantillons
     if (report->sample_type == BT_DF_IQ_SAMPLE_8_BITS_INT) {
-		float theta;
+		
 		theta = theta_est(report);
 		printf("theta moyen = %f\n\n",theta*180/pi);
 

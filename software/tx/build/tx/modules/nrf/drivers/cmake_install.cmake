@@ -39,31 +39,31 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/entropy/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/entropy/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/flash/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/flash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/gpio/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/gpio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/hw_cc3xx/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/hw_cc3xx/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/mpsl/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/mpsl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/antoi/OneDrive/Bureau/Projet/projet_indus/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/serial/cmake_install.cmake")
+  include("C:/Users/paulj/Documents/projet_peripheral/software/tx/build/tx/modules/nrf/drivers/serial/cmake_install.cmake")
 endif()
 
