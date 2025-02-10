@@ -1,7 +1,0 @@
-questions:
--matériel disponible
--nombre de personnes à détecter
--précision
-ajouter distance
-angle gauche/droite haut/bas
-faire planning
