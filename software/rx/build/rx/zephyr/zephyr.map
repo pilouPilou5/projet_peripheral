@@ -5081,21 +5081,21 @@ initlevel       0x0000000000018bec       0x78
  .z_init_PRE_KERNEL_10_0_
                 0x0000000000018bec        0x8 zephyr/soc/soc/nrf52833/libsoc__nordic.a(soc.c.obj)
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.z_init_PRE_KERNEL_1??_*)))
- .z_init_PRE_KERNEL_130_00066_
+ .z_init_PRE_KERNEL_130_00065_
                 0x0000000000018bf4        0x8 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
  .z_init_PRE_KERNEL_130_0_
                 0x0000000000018bfc        0x8 modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
  .z_init_PRE_KERNEL_130_0_
                 0x0000000000018c04        0x8 zephyr/kernel/libkernel.a(kheap.c.obj)
- .z_init_PRE_KERNEL_140_00011_
+ .z_init_PRE_KERNEL_140_00010_
                 0x0000000000018c0c        0x8 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
- .z_init_PRE_KERNEL_140_00076_
+ .z_init_PRE_KERNEL_140_00075_
                 0x0000000000018c14        0x8 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .z_init_PRE_KERNEL_150_00004_
                 0x0000000000018c1c        0x8 zephyr/drivers/entropy/libdrivers__entropy.a(entropy_bt_hci.c.obj)
- .z_init_PRE_KERNEL_150_00089_
+ .z_init_PRE_KERNEL_150_00088_
                 0x0000000000018c24        0x8 zephyr/drivers/entropy/libdrivers__entropy.a(entropy_nrf5.c.obj)
- .z_init_PRE_KERNEL_150_00103_
+ .z_init_PRE_KERNEL_150_00102_
                 0x0000000000018c2c        0x8 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .z_init_PRE_KERNEL_160_0_
                 0x0000000000018c34        0x8 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
@@ -5113,7 +5113,7 @@ initlevel       0x0000000000018bec       0x78
                 0x0000000000018c4c        0x8 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
  .z_init_POST_KERNEL40_0_
                 0x0000000000018c54        0x8 zephyr/kernel/libkernel.a(system_work_q.c.obj)
- .z_init_POST_KERNEL50_00121_
+ .z_init_POST_KERNEL50_00120_
                 0x0000000000018c5c        0x8 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(hci_driver.c.obj)
                 0x0000000000018c64                __init_APPLICATION_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.z_init_APPLICATION?_*)))
@@ -5132,23 +5132,23 @@ device_area     0x0000000000018c64       0x8c
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._device.static.*_??_*)))
  ._device.static.1_30_
                 0x0000000000018c64       0x14 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
-                0x0000000000018c64                __device_dts_ord_66
+                0x0000000000018c64                __device_dts_ord_65
  ._device.static.1_40_
                 0x0000000000018c78       0x28 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
-                0x0000000000018c78                __device_dts_ord_76
-                0x0000000000018c8c                __device_dts_ord_11
+                0x0000000000018c78                __device_dts_ord_75
+                0x0000000000018c8c                __device_dts_ord_10
  ._device.static.1_50_
                 0x0000000000018ca0       0x14 zephyr/drivers/entropy/libdrivers__entropy.a(entropy_nrf5.c.obj)
-                0x0000000000018ca0                __device_dts_ord_89
+                0x0000000000018ca0                __device_dts_ord_88
  ._device.static.1_50_
                 0x0000000000018cb4       0x14 zephyr/drivers/entropy/libdrivers__entropy.a(entropy_bt_hci.c.obj)
                 0x0000000000018cb4                __device_dts_ord_4
  ._device.static.1_50_
                 0x0000000000018cc8       0x14 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
-                0x0000000000018cc8                __device_dts_ord_103
+                0x0000000000018cc8                __device_dts_ord_102
  ._device.static.3_50_
                 0x0000000000018cdc       0x14 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(hci_driver.c.obj)
-                0x0000000000018cdc                __device_dts_ord_121
+                0x0000000000018cdc                __device_dts_ord_120
                 0x0000000000018cf0                _device_list_end = .
 
 sw_isr_table    0x0000000000018cf0      0x180
@@ -5621,11 +5621,11 @@ rodata          0x0000000000018e70     0x1b44
                 0x0000000000019ea8       0x24 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .rodata.uarte_0z_config
                 0x0000000000019ecc       0x24 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
- .rodata.__pinctrl_dev_config__device_dts_ord_103
+ .rodata.__pinctrl_dev_config__device_dts_ord_102
                 0x0000000000019ef0        0xc zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
- .rodata.__pinctrl_states__device_dts_ord_103
+ .rodata.__pinctrl_states__device_dts_ord_102
                 0x0000000000019efc        0x8 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
- .rodata.__pinctrl_state_pins_0__device_dts_ord_103
+ .rodata.__pinctrl_state_pins_0__device_dts_ord_102
                 0x0000000000019f04       0x10 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .rodata.uart_nrfx_uarte_driver_api
                 0x0000000000019f14        0xc zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
@@ -7519,7 +7519,7 @@ noinit          0x0000000020008800     0x2c40
  .debug_str     0x0000000000017ddb       0x5e zephyr/kernel/libkernel.a(mempool.c.obj)
                                         0x5c8 (size before relaxing)
 
-.debug_loc      0x0000000000000000    0x5a43c
+.debug_loc      0x0000000000000000    0x5a454
  *(SORT_BY_ALIGNMENT(.debug_loc))
  .debug_loc     0x0000000000000000      0xbab app/libapp.a(main.c.obj)
  .debug_loc     0x0000000000000bab     0x22be zephyr/libzephyr.a(heap.c.obj)
@@ -7545,84 +7545,84 @@ noinit          0x0000000020008800     0x2c40
  .debug_loc     0x0000000000007cef      0x73b zephyr/arch/arch/arm/core/mpu/libarch__arm__core__mpu.a(arm_mpu.c.obj)
  .debug_loc     0x000000000000842a      0x7a9 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
  .debug_loc     0x0000000000008bd3       0x2c zephyr/lib/libc/common/liblib__libc__common.a(abort.c.obj)
- .debug_loc     0x0000000000008bff     0x1595 zephyr/lib/net_buf/liblib__net_buf.a(buf.c.obj)
- .debug_loc     0x000000000000a194     0x2866 zephyr/lib/net_buf/liblib__net_buf.a(buf_simple.c.obj)
- .debug_loc     0x000000000000c9fa      0x107 zephyr/soc/soc/nrf52833/libsoc__nordic.a(soc.c.obj)
- .debug_loc     0x000000000000cb01      0x21f zephyr/subsys/random/libsubsys__random.a(random_xoshiro128.c.obj)
- .debug_loc     0x000000000000cd20      0x2a2 zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(addr.c.obj)
- .debug_loc     0x000000000000cfc2      0x41f zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(buf.c.obj)
- .debug_loc     0x000000000000d3e1      0x1a0 zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(data.c.obj)
- .debug_loc     0x000000000000d581     0x287f zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(hci_core.c.obj)
- .debug_loc     0x000000000000fe00      0x257 zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(hci_common.c.obj)
- .debug_loc     0x0000000000010057     0x10b4 zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(id.c.obj)
- .debug_loc     0x000000000001110b     0x33d0 zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(scan.c.obj)
- .debug_loc     0x00000000000144db      0xddc zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(direction.c.obj)
- .debug_loc     0x00000000000152b7      0x8df zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(mem.c.obj)
- .debug_loc     0x0000000000015b96      0x263 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(memq.c.obj)
- .debug_loc     0x0000000000015df9      0x4cb zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(mayfly.c.obj)
- .debug_loc     0x00000000000162c4      0x93c zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(util.c.obj)
- .debug_loc     0x0000000000016c00     0x3e92 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ticker.c.obj)
- .debug_loc     0x000000000001aa92       0x4a zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ll_tx_pwr.c.obj)
- .debug_loc     0x000000000001aadc      0x12f zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ll_addr.c.obj)
- .debug_loc     0x000000000001ac0b     0x3257 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull.c.obj)
- .debug_loc     0x000000000001de62      0x16e zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(lll_common.c.obj)
- .debug_loc     0x000000000001dfd0      0xbbf zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(hci_driver.c.obj)
- .debug_loc     0x000000000001eb8f     0x8541 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(hci.c.obj)
- .debug_loc     0x00000000000270d0     0x1a84 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_scan.c.obj)
- .debug_loc     0x0000000000028b54     0x2c41 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_scan_aux.c.obj)
- .debug_loc     0x000000000002b795     0x225f zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_sync.c.obj)
- .debug_loc     0x000000000002d9f4      0xa02 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_df.c.obj)
- .debug_loc     0x000000000002e3f6       0x86 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_chan.c.obj)
- .debug_loc     0x000000000002e47c      0x5f7 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(lll_chan.c.obj)
- .debug_loc     0x000000000002ea73      0x5e5 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_filter.c.obj)
- .debug_loc     0x000000000002f058      0x128 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(crypto.c.obj)
- .debug_loc     0x000000000002f180     0x18f1 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll.c.obj)
- .debug_loc     0x0000000000030a71      0x3cb zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll_clock.c.obj)
- .debug_loc     0x0000000000030e3c     0x1cad zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll_scan.c.obj)
- .debug_loc     0x0000000000032ae9     0x1bbb zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll_scan_aux.c.obj)
- .debug_loc     0x00000000000346a4     0x26f6 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll_sync.c.obj)
- .debug_loc     0x0000000000036d9a      0x35d zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll_df.c.obj)
- .debug_loc     0x00000000000370f7      0x39d zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(hci_vendor.c.obj)
- .debug_loc     0x0000000000037494      0x183 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(cntr.c.obj)
- .debug_loc     0x0000000000037617     0x32a1 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(radio.c.obj)
- .debug_loc     0x000000000003a8b8      0x2f7 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(mayfly.c.obj)
- .debug_loc     0x000000000003abaf      0x534 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(ticker.c.obj)
- .debug_loc     0x000000000003b0e3      0x5b0 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(ecb.c.obj)
- .debug_loc     0x000000000003b693      0x9cc zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(radio_df.c.obj)
- .debug_loc     0x000000000003c05f     0x18d3 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- .debug_loc     0x000000000003d932       0x85 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
- .debug_loc     0x000000000003d9b7      0xe4f zephyr/drivers/entropy/libdrivers__entropy.a(entropy_nrf5.c.obj)
- .debug_loc     0x000000000003e806       0xbb zephyr/drivers/entropy/libdrivers__entropy.a(entropy_bt_hci.c.obj)
- .debug_loc     0x000000000003e8c1     0x187f zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
- .debug_loc     0x0000000000040140       0x42 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(common.c.obj)
- .debug_loc     0x0000000000040182      0x6e4 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(pinctrl_nrf.c.obj)
- .debug_loc     0x0000000000040866     0x11c9 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
- .debug_loc     0x0000000000041a2f     0x1b94 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
- .debug_loc     0x00000000000435c3      0x113 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52833.c.obj)
- .debug_loc     0x00000000000436d6      0x258 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
- .debug_loc     0x000000000004392e      0x221 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_flag32_allocator.c.obj)
- .debug_loc     0x0000000000043b4f      0x9b7 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gppi_ppi.c.obj)
- .debug_loc     0x0000000000044506      0xccf modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
- .debug_loc     0x00000000000451d5     0x3f72 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
- .debug_loc     0x0000000000049147      0xc4f modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
- .debug_loc     0x0000000000049d96     0x1d26 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
- .debug_loc     0x000000000004babc       0x6b modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
- .debug_loc     0x000000000004bb27       0x32 zephyr/kernel/libkernel.a(busy_wait.c.obj)
- .debug_loc     0x000000000004bb59       0xd2 zephyr/kernel/libkernel.a(device.c.obj)
- .debug_loc     0x000000000004bc2b      0x194 zephyr/kernel/libkernel.a(fatal.c.obj)
- .debug_loc     0x000000000004bdbf      0x8b5 zephyr/kernel/libkernel.a(init.c.obj)
- .debug_loc     0x000000000004c674      0x71d zephyr/kernel/libkernel.a(kheap.c.obj)
- .debug_loc     0x000000000004cd91       0x86 zephyr/kernel/libkernel.a(idle.c.obj)
- .debug_loc     0x000000000004ce17      0x769 zephyr/kernel/libkernel.a(mutex.c.obj)
- .debug_loc     0x000000000004d580     0x1627 zephyr/kernel/libkernel.a(queue.c.obj)
- .debug_loc     0x000000000004eba7      0x49d zephyr/kernel/libkernel.a(sem.c.obj)
- .debug_loc     0x000000000004f044     0x3ab3 zephyr/kernel/libkernel.a(work.c.obj)
- .debug_loc     0x0000000000052af7      0xa60 zephyr/kernel/libkernel.a(thread.c.obj)
- .debug_loc     0x0000000000053557     0x3d76 zephyr/kernel/libkernel.a(sched.c.obj)
- .debug_loc     0x00000000000572cd      0x3fe zephyr/kernel/libkernel.a(timeslicing.c.obj)
- .debug_loc     0x00000000000576cb      0xf93 zephyr/kernel/libkernel.a(timeout.c.obj)
- .debug_loc     0x000000000005865e     0x1b22 zephyr/kernel/libkernel.a(poll.c.obj)
- .debug_loc     0x000000000005a180      0x2bc zephyr/kernel/libkernel.a(mempool.c.obj)
+ .debug_loc     0x0000000000008bff     0x1597 zephyr/lib/net_buf/liblib__net_buf.a(buf.c.obj)
+ .debug_loc     0x000000000000a196     0x2866 zephyr/lib/net_buf/liblib__net_buf.a(buf_simple.c.obj)
+ .debug_loc     0x000000000000c9fc      0x107 zephyr/soc/soc/nrf52833/libsoc__nordic.a(soc.c.obj)
+ .debug_loc     0x000000000000cb03      0x21f zephyr/subsys/random/libsubsys__random.a(random_xoshiro128.c.obj)
+ .debug_loc     0x000000000000cd22      0x2a2 zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(addr.c.obj)
+ .debug_loc     0x000000000000cfc4      0x41f zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(buf.c.obj)
+ .debug_loc     0x000000000000d3e3      0x1a0 zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(data.c.obj)
+ .debug_loc     0x000000000000d583     0x287f zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(hci_core.c.obj)
+ .debug_loc     0x000000000000fe02      0x257 zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(hci_common.c.obj)
+ .debug_loc     0x0000000000010059     0x10b4 zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(id.c.obj)
+ .debug_loc     0x000000000001110d     0x33d0 zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(scan.c.obj)
+ .debug_loc     0x00000000000144dd      0xddc zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a(direction.c.obj)
+ .debug_loc     0x00000000000152b9      0x8df zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(mem.c.obj)
+ .debug_loc     0x0000000000015b98      0x263 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(memq.c.obj)
+ .debug_loc     0x0000000000015dfb      0x4cb zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(mayfly.c.obj)
+ .debug_loc     0x00000000000162c6      0x93c zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(util.c.obj)
+ .debug_loc     0x0000000000016c02     0x3e92 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ticker.c.obj)
+ .debug_loc     0x000000000001aa94       0x4a zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ll_tx_pwr.c.obj)
+ .debug_loc     0x000000000001aade      0x12f zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ll_addr.c.obj)
+ .debug_loc     0x000000000001ac0d     0x3257 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull.c.obj)
+ .debug_loc     0x000000000001de64      0x16e zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(lll_common.c.obj)
+ .debug_loc     0x000000000001dfd2      0xbbf zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(hci_driver.c.obj)
+ .debug_loc     0x000000000001eb91     0x8541 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(hci.c.obj)
+ .debug_loc     0x00000000000270d2     0x1a84 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_scan.c.obj)
+ .debug_loc     0x0000000000028b56     0x2c41 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_scan_aux.c.obj)
+ .debug_loc     0x000000000002b797     0x225f zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_sync.c.obj)
+ .debug_loc     0x000000000002d9f6      0xa02 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_df.c.obj)
+ .debug_loc     0x000000000002e3f8       0x86 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_chan.c.obj)
+ .debug_loc     0x000000000002e47e      0x5f7 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(lll_chan.c.obj)
+ .debug_loc     0x000000000002ea75      0x5e5 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(ull_filter.c.obj)
+ .debug_loc     0x000000000002f05a      0x128 zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a(crypto.c.obj)
+ .debug_loc     0x000000000002f182     0x18f1 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll.c.obj)
+ .debug_loc     0x0000000000030a73      0x3cb zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll_clock.c.obj)
+ .debug_loc     0x0000000000030e3e     0x1cad zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll_scan.c.obj)
+ .debug_loc     0x0000000000032aeb     0x1bbb zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll_scan_aux.c.obj)
+ .debug_loc     0x00000000000346a6     0x26f6 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll_sync.c.obj)
+ .debug_loc     0x0000000000036d9c      0x35d zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(lll_df.c.obj)
+ .debug_loc     0x00000000000370f9      0x39d zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(hci_vendor.c.obj)
+ .debug_loc     0x0000000000037496      0x183 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(cntr.c.obj)
+ .debug_loc     0x0000000000037619     0x32a1 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(radio.c.obj)
+ .debug_loc     0x000000000003a8ba      0x2f7 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(mayfly.c.obj)
+ .debug_loc     0x000000000003abb1      0x534 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(ticker.c.obj)
+ .debug_loc     0x000000000003b0e5      0x5b0 zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(ecb.c.obj)
+ .debug_loc     0x000000000003b695      0x9cc zephyr/subsys/bluetooth/controller/ll_sw/nordic/libsubsys__bluetooth__controller__ll_sw__nordic.a(radio_df.c.obj)
+ .debug_loc     0x000000000003c061     0x18d3 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ .debug_loc     0x000000000003d934       0x85 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
+ .debug_loc     0x000000000003d9b9      0xe4f zephyr/drivers/entropy/libdrivers__entropy.a(entropy_nrf5.c.obj)
+ .debug_loc     0x000000000003e808       0xbb zephyr/drivers/entropy/libdrivers__entropy.a(entropy_bt_hci.c.obj)
+ .debug_loc     0x000000000003e8c3     0x187f zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+ .debug_loc     0x0000000000040142       0x42 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(common.c.obj)
+ .debug_loc     0x0000000000040184      0x6e4 zephyr/drivers/pinctrl/libdrivers__pinctrl.a(pinctrl_nrf.c.obj)
+ .debug_loc     0x0000000000040868     0x11c9 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+ .debug_loc     0x0000000000041a31     0x1b94 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+ .debug_loc     0x00000000000435c5      0x113 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52833.c.obj)
+ .debug_loc     0x00000000000436d8      0x258 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
+ .debug_loc     0x0000000000043930      0x221 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_flag32_allocator.c.obj)
+ .debug_loc     0x0000000000043b51      0x9b7 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gppi_ppi.c.obj)
+ .debug_loc     0x0000000000044508      0xccf modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
+ .debug_loc     0x00000000000451d7     0x3f72 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
+ .debug_loc     0x0000000000049149      0xc4f modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
+ .debug_loc     0x0000000000049d98     0x1d26 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
+ .debug_loc     0x000000000004babe       0x6b modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
+ .debug_loc     0x000000000004bb29       0x32 zephyr/kernel/libkernel.a(busy_wait.c.obj)
+ .debug_loc     0x000000000004bb5b       0xd2 zephyr/kernel/libkernel.a(device.c.obj)
+ .debug_loc     0x000000000004bc2d      0x194 zephyr/kernel/libkernel.a(fatal.c.obj)
+ .debug_loc     0x000000000004bdc1      0x8b5 zephyr/kernel/libkernel.a(init.c.obj)
+ .debug_loc     0x000000000004c676      0x71d zephyr/kernel/libkernel.a(kheap.c.obj)
+ .debug_loc     0x000000000004cd93       0x86 zephyr/kernel/libkernel.a(idle.c.obj)
+ .debug_loc     0x000000000004ce19      0x769 zephyr/kernel/libkernel.a(mutex.c.obj)
+ .debug_loc     0x000000000004d582     0x1627 zephyr/kernel/libkernel.a(queue.c.obj)
+ .debug_loc     0x000000000004eba9      0x49d zephyr/kernel/libkernel.a(sem.c.obj)
+ .debug_loc     0x000000000004f046     0x3ab3 zephyr/kernel/libkernel.a(work.c.obj)
+ .debug_loc     0x0000000000052af9      0xa60 zephyr/kernel/libkernel.a(thread.c.obj)
+ .debug_loc     0x0000000000053559     0x3d77 zephyr/kernel/libkernel.a(sched.c.obj)
+ .debug_loc     0x00000000000572d0      0x3fe zephyr/kernel/libkernel.a(timeslicing.c.obj)
+ .debug_loc     0x00000000000576ce      0xf93 zephyr/kernel/libkernel.a(timeout.c.obj)
+ .debug_loc     0x0000000000058661     0x1b37 zephyr/kernel/libkernel.a(poll.c.obj)
+ .debug_loc     0x000000000005a198      0x2bc zephyr/kernel/libkernel.a(mempool.c.obj)
 
 .debug_macinfo
  *(SORT_BY_ALIGNMENT(.debug_macinfo))

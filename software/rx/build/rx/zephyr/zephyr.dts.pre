@@ -986,11 +986,6 @@
   mcuboot-led0 = &led0;
   watchdog0 = &wdt0;
  };
-
- zephyr,user {
-  out0-gpios = <&gpio0 3 0>;
-  out1-gpios = <&gpio0 4 0>;
- };
 };
 
 &reg1 {
@@ -1157,11 +1152,6 @@ zephyr_udc0: &usbd {
 / {
  chosen {
   zephyr,bt-hci = &bt_hci_controller;
- };
-
- zephyr,user {
-  /delete-property/ out0-gpios;
-  /delete-property/ out1-gpios;
  };
 };
 # 0 "<command-line>" 2
